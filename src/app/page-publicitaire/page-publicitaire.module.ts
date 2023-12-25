@@ -6,7 +6,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { PagePublicitaireComponent } from './page-publicitaire.component';
 import { HomePageComponent } from './home-page/home-page.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import { HomePageComponent } from './home-page/home-page.component';
   ],
   imports: [
     CommonModule,
-    PagePublicitaireRoutingModule
+    PagePublicitaireRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ]
 })
 export class PagePublicitaireModule { }

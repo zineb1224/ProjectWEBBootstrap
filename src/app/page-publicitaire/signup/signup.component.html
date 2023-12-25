@@ -1,1 +1,42 @@
-<p>signup works!</p>
+<div class="containerForm">
+    <div class="formLogin">
+      <div class="logo">
+  
+      </div>
+      <div class="titles">
+        <p id="title1">
+          Welcome!
+        </p>
+        <p id="title2">
+            Register and create an account with us.
+        </p>
+      </div>
+      <div class="mb-3 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="staticEmail" placeholder="name@example.com">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword" placeholder="password">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword" placeholder="confirm password">
+        </div>
+      </div>
+      <div class="btn_login">
+        <button type="submit" id="btnLogin" routerLink="/espaceUser">Register</button>
+      </div>
+      <div class="linkSignUp">
+        <p class="txtSign">
+          Already have an account?
+        </p> 
+        <a href="#signupModal" data-toggle="modal" data-target="#signupModal" id="linkSign" routerLink="/login">Login</a>
+      </div>
+    </div>
+  </div>

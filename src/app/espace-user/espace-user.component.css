@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    background-color: var(--color-secondary-shade4);
+    margin: 0;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.sidebar {
+    flex: 2;
+    margin: 25px 15px;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-dark-contrast);
+    flex: 14;
+    margin: 8px;
+    border-radius: 16px;
+}
+
+.content {  
+    margin: 5px;
+}
