@@ -1,0 +1,20 @@
+.containerForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left bottom, var(--color-secondary-shade2) 12%, var(--color-secondary-shade4), var(--color-secondary-shade5) , var(--color-secondary-shade2));
+}
+
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+}

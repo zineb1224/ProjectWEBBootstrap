@@ -17,6 +17,21 @@
     scroll-behavior: smooth;
 }
 
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--color-secondary-shade3);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-secondary-shade5);
+    border-radius: 2px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Merienda&family=Open+Sans&family=Poppins&family=Rubik:wght@300&family=Teko&display=swap');
+
 
 /*-------------------------- colors variables --------------------------*/
 
@@ -36,9 +51,9 @@
     --color-secondary-contrast: #ffffff;
     --color-secondary-shade1: #8094A7;
     --color-secondary-shade2: #415F7C;
-    --color-secondary-shade3: #274A6A;
-    --color-secondary-shade4: #0e2a43;
-    --color-secondary-shade5: #041a2f;
+    --color-secondary-shade3: #22415d;
+    --color-secondary-shade4: #0f293f;
+    --color-secondary-shade5: #081b2c;
     /* tertiary */
     --color-tertiary: #A3A3EB;
     --color-tertiary-contrast: #ffffff;

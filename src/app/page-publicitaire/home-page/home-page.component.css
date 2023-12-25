@@ -1,8 +1,157 @@
 .page{
-    margin: 0;
-    height: 100vh;
-    background-color: var(--color-secondary-shade5);
+    height: 190vh;
+    background: linear-gradient(to left bottom, var(--color-secondary-shade2) 12%, var(--color-secondary-shade4), var(--color-secondary-shade5) , var(--color-secondary-shade2));
 }
-.mt-5{
-    margin-top: 0!important;
+
+nav{
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 255, 0.019)!important;
+    backdrop-filter: blur(22px);
+}
+
+#navbarText{
+    justify-content: flex-end;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    margin: 0px 15px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 20px;
+    font-family: 'Italiana';
+    padding: 5px 15px;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95%;
+}
+
+.getstarted{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 55%;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 55%;
+    width: 40%;
+    margin: 10px;
+}
+
+.descText{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#titleProject{
+    color: white;
+    font-size: 38px;
+    font-family: 'Poppins';
+    padding: 5px 0px;
+}
+
+#descriptionProject{
+    color: white;
+    font-size: 17px;
+    font-family: 'Rubik', sans-serif;
+    padding: 5px 0px;
+}
+
+.picdescription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnGetStarted{
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right top,var(--color-secondary-shade2), var(--color-secondary-shade5)) 1; /* Dégradé de rouge à jaune pour la bordure */
+    border-image-slice: 1; /* Couper le dégradé en tranches égales */
+    margin: 25px 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 500ms ease-in-out-back, background-position 800ms ease-in-out-back, box-shadow 500ms linear;
+}
+
+#btnGetStarted:hover{
+    border: none;
+    background: linear-gradient(to right top, var(--color-secondary-shade2), var(--color-secondary-shade4), var(--color-secondary-shade5));
+    box-shadow: -2px 9px 5px 2px var(--color-secondary-shade4);
+    transform: scale(1.15);
+    
+}
+
+.picDesc{
+    height: 600px;
+    width: 470px;
+    margin-bottom: 60px;
+}
+
+.recommendations{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    padding: 5px 15px;
+    height: 48%;
+}
+
+.titleRecom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px;
+}
+
+#decorTitle{
+    width: 75px;    
+    height: 4px;
+    background-color: white;
+    margin: 0px 8px 5px 0px;
+}
+
+#titleRecomm{
+    font-size: 30px;
+    color: white;
+    padding: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.containerRecom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 5px;
+    height: 100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary-shade5);
+    color: white;
+    height: 3%;
+}
+
+.footer>p{
+    font-size: 12px;
+    font-family: 'Poppins';
 }
