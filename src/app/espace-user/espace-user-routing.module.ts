@@ -4,12 +4,16 @@ import { EspaceUserComponent } from './espace-user.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { MyTasksComponent } from './my-tasks/my-tasks.component';
 import { MyTeamsComponent } from './my-teams/my-teams.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 const routes: Routes = [
   {
     path:'',component:EspaceUserComponent,children:[
       {
         path:"",component:MyProjectsComponent
+      },
+      {
+        path:"projectDetail",component:ProjectDetailsComponent
       },
       {
         path:"myTasks",component:MyTasksComponent

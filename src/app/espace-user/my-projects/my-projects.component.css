@@ -1,0 +1,56 @@
+.container_project{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 30px;
+}
+.ligneTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.titlePage{
+    display: flex;
+    flex-direction: column;
+}
+
+#titlepage{
+    font-size: 27px;
+    color: var(--color-secondary-shade4);
+    font-family: 'Poppins';
+}
+
+#ligneTitle{
+    width: 145px;
+    height: 4px;
+    background-color: var(--color-secondary-shade2);
+    margin-top: -7px;
+}
+
+.btn_ajout{
+    display: flex;
+    padding: 10px 5px;
+}
+
+#btn_ajoutProject{
+    background: linear-gradient(to right top, var(--color-primary-shade1), var(--color-primary-shade3), var(--color-primary-shade4));
+    box-shadow: -2px 3px 5px 2px var(--color-secondary-shade4);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 20px;
+}
+
+.searchFilter{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.listProjects{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}

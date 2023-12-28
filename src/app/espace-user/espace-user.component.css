@@ -6,6 +6,12 @@
     height: 100vh;
 }
 
+.position {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
 .sidebar {
     flex: 2;
     margin: 25px 15px;
@@ -23,4 +29,18 @@
 
 .content {  
     margin: 5px;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: orange;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 20px;
+    border: 3px solid orange;
 }

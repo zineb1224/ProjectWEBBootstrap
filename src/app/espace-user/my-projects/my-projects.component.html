@@ -12,6 +12,10 @@
 
     </div>
     <div class="listProjects">
-        
+        <div class="itemProjet" *ngFor="let _ of repeat(6); let i = index" [routerLink]="'/projectDetail'">
+            <app-project-item class="body__item"></app-project-item>
+            
+        </div>
     </div>
+   
 </div>

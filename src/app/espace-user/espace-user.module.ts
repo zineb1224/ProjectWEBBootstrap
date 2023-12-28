@@ -9,6 +9,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { MyTasksComponent } from './my-tasks/my-tasks.component';
 import { MyTeamsComponent } from './my-teams/my-teams.component';
+import { ProjectItemComponent } from './my-projects/project-item/project-item.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { MyTeamsComponent } from './my-teams/my-teams.component';
     MyProjectsComponent,
     SideBarComponent,
     MyTasksComponent,
-    MyTeamsComponent
+    MyTeamsComponent,
+    ProjectItemComponent,
+    ProjectDetailsComponent
   ],
   imports: [
     CommonModule,
