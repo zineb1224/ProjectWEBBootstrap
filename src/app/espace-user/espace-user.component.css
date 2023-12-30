@@ -4,12 +4,7 @@
     margin: 0;
     max-width: 100%;
     height: 100vh;
-}
-
-.position {
-    height: 100vh;
-    position: fixed;
-    top: 0;
+    overflow: hidden;
 }
 
 .sidebar {
@@ -23,24 +18,11 @@
     flex-direction: column;
     background-color: var(--color-dark-contrast);
     flex: 14;
-    margin: 8px;
+    margin: 10px 2px;
     border-radius: 16px;
+    overflow-y: auto;
 }
 
 .content {  
     margin: 5px;
-}
-
-*::-webkit-scrollbar {
-    width: 12px;
-}
-
-*::-webkit-scrollbar-track {
-    background: orange;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: blue;
-    border-radius: 20px;
-    border: 3px solid orange;
 }

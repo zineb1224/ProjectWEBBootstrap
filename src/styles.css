@@ -88,7 +88,7 @@
     /* dark */
     --color-dark: #393939;
     --color-dark-contrast: #ffffff;
-    --color-dark-shade: #232323;
+    --color-dark-shade: rgb(35, 35, 35);
     --color-dark-tint1: #444444;
     --color-dark-tint2: #5A5A5A;
     --color-dark-tint3: #919191;

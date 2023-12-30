@@ -1,0 +1,149 @@
+.page--main{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 6px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 12px;
+}
+
+.btn_back{
+    fill: var(--color-dark-tint1);
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.btn--download{
+    padding: 15px 8px;
+}
+
+.btn_down{
+    padding: 10px 18px;
+    border: none;
+    background-color: var(--color-tertiary);
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.icon-file{
+    width: 21px;
+    height: 21px;
+    fill: white;
+    margin-bottom: 2px;
+}
+
+.content--project{
+    display: flex;
+    flex-direction: column;
+}
+
+.title--project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.title{
+    font-size: 34px;
+    color: var(--color-secondary-shade4);
+}
+
+.img--project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.img{
+    width: 450px;
+    height: 290px;
+}
+
+.description--project{
+    display: flex;
+    flex-direction: column;
+    padding: 28px 12px 5px 20px;
+}
+
+.subtitle--desc{
+    display: flex;
+    align-items: center;
+}
+
+.decor{
+    width: 52px;
+    height: 3px;
+    background-color: var(--color-secondary-shade3);
+    margin-right: 10px;
+}
+
+.subtitle{
+    font-size: 22px;
+    color: var(--color-secondary-shade3);
+}
+
+.type--project{
+    color: var(--color-dark-tint1);
+    font-size: 16px;
+    padding: 12px 2px 0px;
+}
+
+.date--project{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.date--deb{
+    font-size: 15px;
+    padding: 0px 5px 5px 0px;
+}
+
+.date--fin{
+    font-size: 15px;
+    padding: 0px 5px 5px 0px;
+}
+
+.period{
+    color: var(--color-dark-tint1);
+    font-size: 14px;
+    padding: 0px 0px 5px 5px;
+}
+
+.info--description{
+    font-size: 15px;
+}
+
+.team{
+    display: flex;
+    align-items: center;
+}
+
+#subtitle--team{
+    font-size: 18px;
+    color: var(--color-secondary-shade4);
+    margin-bottom: 0!important;
+}
+
+.name--team{
+    font-size: 17px;
+    margin-bottom: 0!important;
+    padding: 0px 18px;
+}
+
+.tasks{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 12px 5px 20px;
+}
+
+
