@@ -1,0 +1,250 @@
+.item--content p,h1{
+    margin: 0px;
+}
+
+.item--content{
+    display: flex;
+    flex-direction: column;
+}
+
+.item--content--md{
+    background-color: var(--color-dark-contrast);
+    padding: 15px 15px;
+    margin: 5px 0px 12px;
+    border-radius: 16px;
+    box-shadow: -2px 2px 5px 1px var(--color-dark-tint4);
+}
+
+.quick--details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plus--details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECECEC;
+    padding: 6px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.plus--details:hover{
+    background-color: var(--color-dark-tint6);
+    cursor: pointer;
+}
+
+.plus--details--icon{
+    height: 18px;
+    width: 18px;
+    fill: var(--color-warning-contrast);
+}
+
+.content--task{
+    display: flex;
+    align-items: center;
+    flex: 2;
+}
+
+.name__task{
+    font-size: 17px;
+    margin: 0px 10px!important;
+}
+
+.content--projectTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3;
+}
+
+.content--respo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3;
+}
+
+.date{
+    font-size: 16px;
+    padding: 0px 10px;
+}
+
+.content--datedeb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.content--datefin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+
+.task--detail p, h1{
+    margin: 0px;
+}
+
+.task--details{
+    display: flex;
+    flex-direction: column;
+}
+
+.details--header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    margin: 20px 5px 0px;
+}
+
+.header__text{
+    color: var(--color-dark-tint3);
+    font-size: 13px;
+}
+
+.text__decription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3;
+}
+
+.text__date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.text__others{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.text__progresse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3;
+}
+
+.item--tasks{
+    margin: 2px 25px;
+}
+
+.task--detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task--detail--md{
+    height: 7vh;
+    background-color: var(--color-dark-tint6);
+    padding: 8px 12px;
+    margin: 5px 0px;
+    border-radius: 14px;
+    border: 1px solid var(--color-dark-tint5);
+}
+
+.content--description{
+    display: flex;
+    align-items: center;
+    flex: 3;
+}
+
+.description{
+    font-size: 14px;
+    margin: 0px 5px;
+    padding: 0 5px;
+}
+
+.content--time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.date{
+    font-size: 14px;
+    padding: 0px 10px;
+    color: var(--color-dark-tint3);
+}
+
+.content--progress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3;
+}
+
+.progressBar{
+    margin: 0px 10px;
+}
+
+progress {
+    border-radius: 13px; 
+    width: 260px;
+    height: 9px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: var(--color-tertiary-tint1);
+    border-radius: 7px;
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--color-tertiary);
+    border-radius: 7px;
+}
+
+.progress__pourcentage{
+    color: var(--color-dark-tint2);
+    margin-right: 16px;
+}
+
+.content--others{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.other-link{
+    border: 1px solid var(--color-dark-tint5);
+    padding: 5px 8px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.delete{
+    color: var(--color-danger-tint1);
+    fill: var(--color-danger-tint1);
+}
+
+.icon-delete{
+    width: 18px;
+    height: 18px;
+}
+
+.edit{
+    color: var(--color-success-tint1);
+    fill: var(--color-success-tint1);
+}
+
+.icon-edit{
+    width: 18px;
+    height: 18px;
+}
+

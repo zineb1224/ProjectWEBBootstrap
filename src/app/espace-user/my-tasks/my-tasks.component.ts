@@ -12,4 +12,8 @@ export class MyTasksComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  repeat(count: number): number[] {
+    return Array(count).fill(0);
+  }
+
 }

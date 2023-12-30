@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
+
 * {
     padding: 0px;
     margin: 0px;
@@ -60,7 +61,7 @@
     --color-tertiary-shade2: #6363DD;
     --color-tertiary-shade3: #5959DB;
     --color-tertiary-shade4: #4747D7;
-    --color-tertiary-tint1: #D1D1F5;
+    --color-tertiary-tint1: #d2d2ec;
     /** success **/
     --color-success: #54AF3F;
     --color-success-contrast: #ffffff;

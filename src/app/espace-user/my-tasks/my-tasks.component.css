@@ -1,0 +1,127 @@
+.container_task{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 30px;
+}
+.ligneTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.titlePage{
+    display: flex;
+    flex-direction: column;
+}
+
+#titlepage{
+    font-size: 27px;
+    color: var(--color-secondary-shade4);
+    font-family: 'Poppins';
+}
+
+#ligneTitle{
+    width: 145px;
+    height: 4px;
+    background-color: var(--color-secondary-shade2);
+    margin-top: -7px;
+}
+
+.searchFilter{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search--bar{
+    display: flex;
+    align-items: center;
+    width: 330px;
+    background-color: var(--color-dark-contrast);
+    padding:5px 10px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color-dark-tint4);
+}
+
+.search--icon{
+    height: 21px;
+    width: 21px;
+    color: var(--color-dark-tint1);
+    fill: var(--color-dark-tint3);
+}
+
+.input--search{
+    padding: 3px 8px;
+    width: 95%;
+    border: none;
+}
+
+.input--search::placeholder{
+    color: var(--color-dark-tint3);
+    font-size: 14px;
+}
+
+.listTasks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px 5px;
+}
+
+.content--header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 88%;
+    margin: 15px 0px 0px;
+}
+
+.header__text{
+    color: var(--color-dark-tint2);
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.text__task{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 2;
+}
+
+.text__projecttitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+}
+
+.text__respo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+}
+
+.text__dateDeb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
+
+.text__datFin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
+
+.content--list{
+    width: 98%;
+    margin-right: 8px;
+}
+

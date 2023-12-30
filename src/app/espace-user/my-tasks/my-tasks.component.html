@@ -1,1 +1,39 @@
-<p>my-tasks works!</p>
+<div class="container_task">
+    <div class="ligneTitle">
+        <div class="titlePage">
+            <h1 id="titlepage">My Tasks</h1>
+            <span id="ligneTitle"></span>
+        </div>
+    </div>
+    <div class="searchFilter">
+        <div class="search--bar">
+            <svg xmlns="http://www.w3.org/2000/svg" class="search--icon" width="24" height="24" viewBox="0 0 24 24">
+                <g id="vuesax_outline_search-normal" data-name="vuesax/outline/search-normal" transform="translate(-108 -188)">
+                  <g id="search-normal">
+                    <path id="Vector" d="M9.75,19.5A9.75,9.75,0,1,1,19.5,9.75,9.756,9.756,0,0,1,9.75,19.5Zm0-18A8.25,8.25,0,1,0,18,9.75,8.258,8.258,0,0,0,9.75,1.5Z" transform="translate(109.25 189.25)" fill="#292d32"/>
+                    <path id="Vector-2" data-name="Vector" d="M2.169,4.79a1.641,1.641,0,0,1-.23-.02c-.47-.06-1.32-.38-1.8-1.81A2.266,2.266,0,0,1,.389.89,2.272,2.272,0,0,1,2.279,0a2.322,2.322,0,0,1,2.18,1.08,2.355,2.355,0,0,1-.31,2.42A2.406,2.406,0,0,1,2.169,4.79Zm-.6-2.3c.17.52.41.78.57.8s.46-.17.77-.62c.29-.43.31-.74.24-.88s-.35-.29-.87-.29a.807.807,0,0,0-.67.27A.8.8,0,0,0,1.569,2.49Z" transform="translate(125.991 206)" fill="#292d32"/>
+                    <path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(108 188)" fill="none" opacity="0"/>
+                  </g>
+                </g>
+              </svg>
+              
+            <input type="search" class="input--search" placeholder="Search a task ..."  name="search">
+        </div>
+    </div>
+    <div class="listTasks">
+      <div class="content--header">
+        <p class="header__text text__task">Task</p>
+        <p class="header__text text__projecttitle">Project Title</p>
+        <p class="header__text text__respo">Respo Name</p>
+        <p class="header__text text__dateDeb">Date deb</p>
+        <p class="header__text text__datFin">Date fin</p>
+    </div>
+    <div class="content--list" >
+        <div class="item" *ngFor="let _ of repeat(6); let i = index">
+            <app-task-item></app-task-item>
+        </div>
+        
+    </div>
+    </div>
+   
+</div>
