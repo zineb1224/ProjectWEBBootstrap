@@ -19,6 +19,7 @@
     font-size: 27px;
     color: var(--color-secondary-shade4);
     font-family: 'Poppins';
+    padding: 15px 2px 0;
 }
 
 #ligneTitle{
@@ -40,7 +41,7 @@
     width: 330px;
     background-color: var(--color-dark-contrast);
     padding:5px 10px;
-    margin: 20px 10px;
+    margin: 35px 10px 5px;
     border-radius: 10px;
     border: 1px solid var(--color-dark-tint4);
 }

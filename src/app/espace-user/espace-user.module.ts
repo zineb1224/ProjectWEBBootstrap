@@ -12,6 +12,7 @@ import { MyTeamsComponent } from './my-teams/my-teams.component';
 import { ProjectItemComponent } from './my-projects/project-item/project-item.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { TaskItemComponent } from './my-tasks/task-item/task-item.component';
+import { MyProfilComponent } from './my-profil/my-profil.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TaskItemComponent } from './my-tasks/task-item/task-item.component';
     MyTeamsComponent,
     ProjectItemComponent,
     ProjectDetailsComponent,
-    TaskItemComponent
+    TaskItemComponent,
+    MyProfilComponent
   ],
   imports: [
     CommonModule,

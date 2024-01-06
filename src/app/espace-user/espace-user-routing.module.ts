@@ -5,6 +5,7 @@ import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { MyTasksComponent } from './my-tasks/my-tasks.component';
 import { MyTeamsComponent } from './my-teams/my-teams.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { MyProfilComponent } from './my-profil/my-profil.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,9 @@ const routes: Routes = [
       },
       {
         path:"myTeams",component:MyTeamsComponent
+      },
+      {
+        path:"myProfil",component:MyProfilComponent
       }
     ]
   }
