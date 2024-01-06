@@ -1,6 +1,6 @@
 <div class="card">
-    <img src="../../../../assets/pics/imgprojectInfo.avif" class="card-img-top" alt="...">
-    <div class="card-body titles">
+    <img src="../../../../assets/pics/imgprojectInfo.avif" class="card-img-top" alt="..." [routerLink]="'/projectDetail'">
+    <div class="card-body titles" [routerLink]="'/projectDetail'">
       <h5 class="card-title"> Projet1 </h5>
       <p class="card-text">Projet Informatique.</p>
     </div>
@@ -21,7 +21,7 @@
           </g>
         </svg>
         </a>
-        <a class="card-link edit">
+        <a class="card-link edit" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon-edit" width="24" height="24" viewBox="0 0 24 24">
           <g id="vuesax_outline_edit" data-name="vuesax/outline/edit" transform="translate(-620 -252)">
             <g id="edit">
@@ -44,21 +44,81 @@
   </div>
 
 
-<!-- Modal -->
+<!-- Modal delete project -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Delete Confirm</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        are you sure to delete this project ?
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
+        <button type="button" class="btn btn-primary">Confirm</button>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Modal edit project-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Project</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formProjects" (ngSubmit)="editProject()" id="form">
+                <main class="main-form">
+                    <div class="input-element">
+                        <div class="input input-title">
+                            <label for="">Project title :</label>
+                            <input type="text" formControlName="title" placeholder="Project Titre">
+                        </div>
+                    </div>
+                    <div class="input-element">
+                        <div class="input input-title">
+                            <label for="">Type of Project :</label>
+                            <input type="text" formControlName="type" placeholder="Type of Project">
+                        </div>
+                    </div>
+                    <div class="input-element">
+                        <div class="input input-title">
+                            <label for="">Project Description :</label>
+                            <input type="text" formControlName="description" placeholder="Project Description">
+                        </div>
+                    </div>
+                    <div class="input-element">
+                        <div class="input input-title">
+                            <label for="">Project start date :</label>
+                            <input type="date" formControlName="date_deb" placeholder="Date start Project">
+                        </div>
+                    </div>
+                    <div class="input-element">
+                        <div class="input input-title">
+                            <label for="">Project end date :</label>
+                            <input type="date" formControlName="date_fin" placeholder="Date end Project">
+                        </div>
+                    </div>
+                    <div class="input-element">
+                        <div class="input input-img">
+                            <label for="">Image of the project :</label>
+                            <input type="file" (change)="this.onFilechange($event)" placeholder="Search an image ">
+                        </div>
+                    </div>
+                </main>
+                <div class="btn-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button class="btn add" type="submit">Confirm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+

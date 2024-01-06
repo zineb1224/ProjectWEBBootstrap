@@ -4,8 +4,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagePublicitaireModule } from './page-publicitaire/page-publicitaire.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EspaceUserModule } from './espace-user/espace-user.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import { EspaceUserModule } from './espace-user/espace-user.module';
     AppRoutingModule,
     FormsModule,
     PagePublicitaireModule,
-    EspaceUserModule
+    EspaceUserModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

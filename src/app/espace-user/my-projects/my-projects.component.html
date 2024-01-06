@@ -5,27 +5,7 @@
             <span id="ligneTitle"></span>
         </div>
         <div class="btn_ajout">
-            <button id="btn_ajoutProject" data-bs-toggle="modal" data-bs-target="#exampleModal"> Add project </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <button id="btn_ajoutProject" data-bs-toggle="modal" data-bs-target="#addprojectModal"> Add project </button>
         </div>
     </div>
     <div class="searchFilter">
@@ -50,10 +30,70 @@
         </div>
     </div>
     <div class="listProjects">
-        <div class="itemProjet" *ngFor="let _ of repeat(6); let i = index" [routerLink]="'/projectDetail'">
+        <div class="itemProjet" *ngFor="let _ of repeat(6); let i = index">
             <app-project-item class="body__item"></app-project-item>
 
         </div>
     </div>
 
 </div>
+
+            <!-- Modal add project-->
+            <div class="modal fade" id="addprojectModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Project</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form [formGroup]="formProjects" (ngSubmit)="addProject()" id="form">
+                                <main class="main-form">
+                                    <div class="input-element">
+                                        <div class="input input-title">
+                                            <label for="">Project title :</label>
+                                            <input type="text" formControlName="title" placeholder="Project Titre">
+                                        </div>
+                                    </div>
+                                    <div class="input-element">
+                                        <div class="input input-title">
+                                            <label for="">Type of Project :</label>
+                                            <input type="text" formControlName="type" placeholder="Type of Project">
+                                        </div>
+                                    </div>
+                                    <div class="input-element">
+                                        <div class="input input-title">
+                                            <label for="">Project Description :</label>
+                                            <input type="text" formControlName="description" placeholder="Project Description">
+                                        </div>
+                                    </div>
+                                    <div class="input-element">
+                                        <div class="input input-title">
+                                            <label for="">Project start date :</label>
+                                            <input type="date" formControlName="date_deb" placeholder="Date start Project">
+                                        </div>
+                                    </div>
+                                    <div class="input-element">
+                                        <div class="input input-title">
+                                            <label for="">Project end date :</label>
+                                            <input type="date" formControlName="date_fin" placeholder="Date end Project">
+                                        </div>
+                                    </div>
+                                    <div class="input-element">
+                                        <div class="input input-img">
+                                            <label for="">Image of the project :</label>
+                                            <input type="file" (change)="this.onFilechange($event)" placeholder="Search an image ">
+                                        </div>
+                                    </div>
+                                </main>
+                                <div class="btn-footer">
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                    <button class="btn add" type="submit">Confirm</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+

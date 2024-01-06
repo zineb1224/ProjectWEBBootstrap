@@ -203,3 +203,159 @@
 .list--diplomes{
     margin: 20px 0px;
 }
+
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    max-height: 70vh;
+    flex: 14;
+    padding: 10px 0;
+    overflow-x: hidden;
+}
+
+.edit--img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+.button__editImg{
+    color: var(--color-primary);
+    font-size: 14px;
+    padding: 8px 2px;
+    cursor: pointer;
+}
+
+.text{
+    font-size: 12px;
+    color: var(--color-dark-tint3);
+    margin: 5px 35px;
+}
+
+.input-element {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2px 5px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px;
+    width: 97%;
+}
+
+.input label{
+    flex: 4;
+    font-size: 13px;
+    margin: 4px 8px ;
+}
+
+.input input{
+    flex: 5;
+    background-color: var(--color-dark-tint5);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 3px;
+}
+
+.btn__changePassword{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28%;
+    height: 5vh;
+    font-size: 12px;
+    color: var(--color-dark-contrast);
+    background-color: var(--color-primary-tint1);
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px 35px;
+}
+
+.btn__forgotPassword{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 31%;
+    font-size: 12px;
+    color: var(--color-primary-tint1);
+    cursor: pointer;
+    margin: 8px 35px;
+}
+
+.btn-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 2;
+    padding: 8px;
+}
+
+.btn-footer button {
+    padding: 8px 18px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.add {
+    background-color: var(--color-primary);
+    border: none;
+    color: #fff;
+}
+
+.modal-body{
+    padding: 0;
+}
+
+.btn--changeImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    border-top: 1px solid var(--color-dark-tint4);
+    padding: 12px 0px;
+    cursor: pointer;
+}
+
+.btn__text{
+    text-align: center;
+    font-size: 15px;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.btn--removeImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-size: 15px;
+    color: var(--color-danger);
+    border-top: 1px solid var(--color-dark-tint4);
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.btn--cancel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-size: 13px;
+    border-top: 1px solid var(--color-dark-tint4);
+    padding: 8px 0px;
+    cursor: pointer;
+}

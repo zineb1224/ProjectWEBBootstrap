@@ -14,9 +14,8 @@
             <div class="nom--user--edit">
                 <div class="nom__user">
                     <p class="nom__user_fr">nom1 prenom1</p>
-                    <p class="nom__user_ar">الاسم النسب</p>
                 </div>
-                <div class="btn__edit-profile">
+                <div class="btn__edit-profile" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <svg xmlns="http://www.w3.org/2000/svg" class="btn__edit" viewBox="0 0 24 24">
                         <g id="vuesax_bold_user-edit" data-name="vuesax/bold/user-edit"
                             transform="translate(-492 -188)">
@@ -130,3 +129,114 @@
         </div>
     </div>
 </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Profil</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form id="form" [formGroup]="formEdit" >
+                <main class="main-form">
+                    <div class="edit--img">
+                        <img [src]="" alt="" class="img">
+                        <div class="button__editImg" data-bs-toggle="modal" data-bs-target="#changepicModal" (click)="editImg()">
+                            Profile Photo edit
+                        </div>
+                    </div>
+                    <div class="personal--info">
+                        <p class="text">personal informations</p>
+                        <div class="input-element">
+                            <div class="input select-name">
+                                <label for="">full name :</label>
+                                <input type="text" formControlName="name" [placeholder]="" [readonly]="true">
+                            </div>
+                        </div>
+                        <div class="input-element">
+                            <div class="input input-email">
+                                <label for="">Email :</label>
+                                <input type="text" formControlName="email" [placeholder]="" [readonly]="true">
+                            </div>
+                        </div>
+                        <div class="input-element">
+                            <div class="input input-email">
+                                <label for="">Phone number :</label>
+                                <input type="text" formControlName="num" [placeholder]="">
+                            </div>
+                        </div>
+                        <div class="input-element">
+                            <div class="input input-email">
+                                <label for="">CIN :</label>
+                                <input type="text" formControlName="cin" [placeholder]="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit--password">
+                        <p class="text">Change password </p>
+                        <div class="input-element">
+                            <div class="input input-psw">
+                                <label for="">Current Password :</label>
+                                <input type="password" formControlName="oldPassword">
+                            </div>
+                        </div>
+                        <div class="input-element">
+                            <div class="input input-newpsw">
+                                <label for="">New Password :</label>
+                                <input type="password" formControlName="newPassword">
+                            </div>
+                        </div>
+                        <div class="input-element">
+                            <div class="input input-confirmpsw">
+                                <label for="">Confirm the new password :</label>
+                                <input type="password" formControlName="confirmPassword">
+                            </div>
+                        </div>
+                        <div class="btn__changePassword">
+                            Change password
+                        </div>
+                        <div class="btn__forgotPassword">
+                            Forgot your password
+                        </div>
+                    </div>
+                </main>
+                <div class="btn-footer">
+                    <button class="add" type="submit" (click)="modifier()">Confirm</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="changepicModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">change profile photo</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="btn--changeImg">
+                <label for="image" class="btn__text">Import a photo</label>
+                <input id="image" type="file"  (change)="this.onFilechange($event)" accept="image/*" hidden>
+            </div>
+            <div class="btn--removeImg">
+                Delete the photo
+            </div>
+            <div class="btn--cancel" data-bs-dismiss="modal" >
+                Cancel
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+

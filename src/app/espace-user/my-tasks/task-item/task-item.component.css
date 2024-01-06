@@ -231,6 +231,7 @@ progress::-webkit-progress-value {
 .delete{
     color: var(--color-danger-tint1);
     fill: var(--color-danger-tint1);
+    cursor: pointer;
 }
 
 .icon-delete{
@@ -241,6 +242,7 @@ progress::-webkit-progress-value {
 .edit{
     color: var(--color-success-tint1);
     fill: var(--color-success-tint1);
+    cursor: pointer;
 }
 
 .icon-edit{

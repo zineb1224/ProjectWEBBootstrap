@@ -11,32 +11,58 @@
             Register and create an account with us.
         </p>
       </div>
-      <div class="mb-3 row">
-        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="staticEmail" placeholder="name@example.com">
+      <form class="form"  [formGroup]="formSignup" (ngSubmit)="signUp()">
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Full Name</label>
+          <div class="col-sm-10">
+            <input type="text" formControlName="name" class="form-control" id="staticEmail" placeholder="full name">
+          </div>
         </div>
-      </div>
-      <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-        <div class="col-sm-10">
-          <input type="password" class="form-control" id="inputPassword" placeholder="password">
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" formControlName="email" class="form-control" id="staticEmail" placeholder="name@example.com">
+          </div>
         </div>
-      </div>
-      <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
-        <div class="col-sm-10">
-          <input type="password" class="form-control" id="inputPassword" placeholder="confirm password">
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">CIN</label>
+          <div class="col-sm-10">
+            <input type="text" formControlName="cin"  class="form-control" id="staticEmail" placeholder="CIN">
+          </div>
         </div>
-      </div>
-      <div class="btn_login">
-        <button type="submit" id="btnLogin" routerLink="/espaceUser">Register</button>
-      </div>
-      <div class="linkSignUp">
-        <p class="txtSign">
-          Already have an account?
-        </p> 
-        <a href="#signupModal" data-toggle="modal" data-target="#signupModal" id="linkSign" routerLink="/login">Login</a>
-      </div>
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Phone Number</label>
+          <div class="col-sm-10">
+            <input type="tel" formControlName="tele" class="form-control" id="staticEmail" placeholder="phone number">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Birth Date</label>
+          <div class="col-sm-10">
+            <input type="date" formControlName="birth"  class="form-control" id="staticEmail" placeholder="birth date">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" formControlName="password" class="form-control" id="inputPassword" placeholder="password">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+          <div class="col-sm-10">
+            <input type="password" formControlName="confirmpassword"  class="form-control" id="inputPassword" placeholder="confirm password">
+          </div>
+        </div>
+        <div class="btn_login">
+          <button type="submit" id="btnLogin" routerLink="/espaceUser">Register</button>
+        </div>
+        <div class="linkSignUp">
+          <p class="txtSign">
+            Already have an account?
+          </p> 
+          <a href="#signupModal" data-toggle="modal" data-target="#signupModal" id="linkSign" routerLink="/login">Login</a>
+        </div>
+      </form>
     </div>
   </div>
