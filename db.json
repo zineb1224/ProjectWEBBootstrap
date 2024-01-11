@@ -7,9 +7,9 @@
       "description": "le projet MLproject est un projet infromatique specialement dans le domaine AI et le Machine Learning ",
       "type":"projet informatique",
       "progress": 50,
-      "date_debut":"10-01-2024",
-      "date_fin":"18-01-2024",
-      "team_id?":1
+      "date_debut":"01/10/2024",
+      "date_fin":"01/18/2024",
+      "team_id":1
     },
     {
       "id": 2,
@@ -18,57 +18,111 @@
       "description": "le projet DLproject est un projet infromatique specialement dans le domaine AI et le Deep Learning ",
       "type":"projet informatique",
       "progress": 70,
-      "date_debut":"08-01-2024",
-      "date_fin":"28-01-2024",
-      "team_id?":1
+      "date_debut":"01/08/2024",
+      "date_fin":"01/28/2024",
+      "team_id":2
     }
   ],
   "members": [
     {
-      "id":"",
-      "nom":"",
-      "email":"",
-      "password":"",
-      "telephone":"string",
-      "date_naissance":"Date",
-      "sexe":"string",
-      "cin":"string",
-      "photo_profile":"string",
-      "skills":[{"skill_id":1}]
+      "id":1,
+      "nom":"El houz Zineb",
+      "email":"name_name@gmail.com",
+      "password":"zinebprojet123",
+      "telephone":"5624105208",
+      "date_naissance":"12/24/2002",
+      "sexe":"feminin",
+      "cin":"Ex457652",
+      "photo_profile":"vect-ex1.png",
+      "description":"The purpose of lorem ipsum is to create a natural looking block of text that doesn't distract from the layout.",
+      "skills":[
+        {
+        "skill_id":1,
+        "skill_title":"Angular",
+        "skill_icon": "angular.png"
+      },
+      {
+        "skill_id":2,
+        "skill_title":"Bootstrap",
+        "skill_icon": "bootstrap-logo.png"
+      },
+      {
+        "skill_id":3,
+        "skill_title":"Html",
+        "skill_icon": "html.png"
+      },
+      {
+        "skill_id":4,
+        "skill_title":"CSS",
+        "skill_icon": "css.png"
+      }
+    ],
+      "certificats":[
+        {
+        "certificat_id":1,
+        "certificat_etablissement_logo":"ibm.png",
+        "certificat_name":"certificat name",
+        "certificat_etablissement":"IBM"
+        },
+        {
+          "certificat_id":2,
+          "certificat_etablissement_logo":"coursera.png",
+          "certificat_name":"certificat name",
+          "certificat_etablissement":"Coursera"
+        }
+      ]
     }
   ],
   "teams": [
     {
       "id": 1,
-      "nom":"string",
-      "icon":"string",
-      "goalTeam":"gbrg",
-      "nbr_member":1,
-      "leader":1,
+      "nom":"Team MLprojects",
+      "icon":"mlteam.png",
+      "goalTeam":"the objective of our team is supposed to develop ML projects",
+      "nbr_member":3,
+      "leader_name":"El houz Zineb",
+      "members":[{"member_id":1}]
+    },
+    {
+      "id": 2,
+      "nom":"Team DLprojects",
+      "icon":"dlteam.png",
+      "goalTeam":"the objective of our team is supposed to develop DL projects",
+      "nbr_member":5,
+      "leader_name":"Samali Abedrrahmane",
+      "members":[{"member_id":1}]
+    },
+    {
+      "id": 3,
+      "nom":"Team CP",
+      "icon":"teamicon.png",
+      "goalTeam":"the objective of our team is supposed to improve problem solving skills",
+      "nbr_member":2,
+      "leader_name":"Berquia Mouad",
       "members":[{"member_id":1}]
     }
   ],
   "tasks": [
     {
       "id": 1,
-      "titre":"string",
-      "description":"string",
-      "status":"string",
-      "progress":"string",
-      "date_debut":"Date",
-      "date_fin":"Date",
-      "member_id": 1,
+      "titre":"data cleaning",
+      "description":"do the cleaning  for our dataset",
+      "status":"in progress",
+      "progress":60,
+      "date_debut":"01/10/2024",
+      "date_fin":"01/13/2024",
+      "respo": "El houz Zineb",
       "project_id": 1
     },
     {
       "id": 2,
-      "titre":"string",
-      "description":"string",
-      "status":"string",
-      "progress":"string",
-      "date_debut":"Date",
-      "date_fin":"Date",
-      "member_id": 1,
+      "titre":"DL model",
+      "description":"write a DL model that solve the prob",
+      "status":"in progress",
+      "progress":40,
+      "date_debut":"01/14/2024",
+      "date_fin":"01/18/2024",
+      "respo": "El houz Zineb",
       "project_id": 1
     }
   ]
