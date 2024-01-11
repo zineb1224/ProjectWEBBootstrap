@@ -1,6 +1,6 @@
 <div class="card">
-    <img [src]="'../../../assets/pics/' + project.image" class="card-img-top" alt="..." [routerLink]="'/projectDetail'">
-    <div class="card-body titles" [routerLink]="'/projectDetail'">
+    <img [src]="'../../../assets/pics/' + project.image" class="card-img-top" alt="..." [routerLink]="'/projectDetail/'+ project.id">
+    <div class="card-body titles" [routerLink]="'/projectDetail/'+ project.id">
       <h5 class="card-title"> {{project.titre}} </h5>
       <p class="card-text">{{project.type}}</p>
     </div>

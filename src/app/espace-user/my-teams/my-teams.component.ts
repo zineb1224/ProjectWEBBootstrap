@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { TeamService } from 'src/app/services/team.service';
 
 @Component({
   selector: 'app-my-teams',
@@ -8,9 +9,16 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class MyTeamsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private teamService: TeamService) { }
+  public teams:any;
 
   ngOnInit(): void {
+    this.teamService.getAll().subscribe(
+      {
+        next: (data) => {this.teams = data; console.log(data)},
+        error: (error) => {console.log(error);}
+      }
+    )
   }
 
   repeat(count: number): number[] {

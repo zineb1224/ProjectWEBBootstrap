@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MemberService } from 'src/app/services/member.service';
 
 @Component({
   selector: 'app-my-profil',
@@ -8,9 +9,23 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class MyProfilComponent implements OnInit {
 
-  constructor() { }
+  constructor(private memberService: MemberService) { }
+
+  public member:any;
+  public skills:any=[];
+  public certificats:any=[];
 
   ngOnInit(): void {
+    this.memberService.getById(1).subscribe(
+      {
+        next: (data) => { this.member = data;
+          console.log(this.member.certificats)
+          this.certificats = this.member.certificats;
+          this.skills = this.member.skills;
+        },
+        error: (error) => { console.log(error); }
+      }
+    )
   }
 
   public formEdit = new FormGroup({
@@ -25,13 +40,11 @@ export class MyProfilComponent implements OnInit {
 
 
   public editImg() {
-    
   }
 
   public modifier() {}
 
   onFilechange(event: any) {
-    
   }
 
 }

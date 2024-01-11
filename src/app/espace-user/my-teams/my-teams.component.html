@@ -30,8 +30,8 @@
         </div>
     </div>
     <div class="listTeams">
-        <div class="itemTeam" *ngFor="let _ of repeat(6); let i = index">
-            <app-team-item class="body__item"></app-team-item>
+        <div class="itemTeam" *ngFor="let team of teams">
+            <app-team-item class="body__item" [team]="team" ></app-team-item>
         </div>
     </div>
 

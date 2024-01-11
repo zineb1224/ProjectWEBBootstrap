@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { TeamService } from 'src/app/services/team.service';
 
 @Component({
   selector: 'app-team-details',
@@ -8,9 +9,20 @@ import { Router } from '@angular/router';
 })
 export class TeamDetailsComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  public id!: number;
+  public team:any;
+  constructor(private router:Router, private activatedRouter:ActivatedRoute, private teamService: TeamService) { }
 
   ngOnInit(): void {
+    this.activatedRouter.params.subscribe(data=>{
+      this.id = data['id'];
+    });
+    this.teamService.getById(this.id).subscribe(
+      {
+        next: (data) => {this.team = data;console.log(data)},
+        error: (error) => {console.log(error);}
+      }
+    )
   }
 
   public back(){

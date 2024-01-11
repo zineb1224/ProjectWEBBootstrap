@@ -29,8 +29,8 @@
         <p class="header__text text__datFin">Date fin</p>
     </div>
     <div class="content--list" >
-        <div class="item" *ngFor="let _ of repeat(6); let i = index">
-            <app-task-item></app-task-item>
+        <div class="item" *ngFor="let task of tasks">
+            <app-task-item [task]="task"></app-task-item>
         </div>
         
     </div>

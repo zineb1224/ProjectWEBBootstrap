@@ -159,7 +159,20 @@
 .user__skills{
     display: flex;
     flex-direction: column;
-    margin-left: -80px;
+    width: 50%;
+}
+
+.skill--header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: 50px;
+}
+
+.titles{
+    display: flex;
+    flex-direction: column;
 }
 
 .subject__title{
@@ -176,14 +189,40 @@
     margin-top: -8px;
 }
 
-.list--subjects{
+.btn--ajt{
     display: flex;
-    flex-wrap: wrap;
+}
+
+.icon_add{
+    width: 28px;
+    height: 28px;
+    fill: var(--color-dark-tint3);
+    cursor: pointer;
+}
+
+.icon_add:hover{
+    fill: var(--color-dark-tint2);
+}
+
+.list--skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    margin: 20px 0px;
 }
 
 .user__certificats{
     display: flex;
     flex-direction: column;
+    width: 50%;
+}
+
+.certificat--header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
 }
 
 .diplome__title{
@@ -201,7 +240,9 @@
 }
 
 .list--diplomes{
-    margin: 20px 0px;
+    margin: 20px 0px 0px 35px;
+    align-items: center;
+    width: 80%;
 }
 
 

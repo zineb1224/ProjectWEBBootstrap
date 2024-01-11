@@ -26,19 +26,19 @@
 
     </div>
     <div class="content--task">
-      <p class="name__task">Task title 1 </p>
+      <p class="name__task">{{task.titre}} </p>
     </div>
     <div class="content--projectTitle">
       <p class="titleProject">Project title </p>
     </div>
     <div class="content--respo">
-      <p class="name__respo">Zineb Elhz</p>
+      <p class="name__respo">{{task.respo}}</p>
     </div>
     <div class="content--datedeb">
-      <p class="date"> 24 decembre 2023 </p>
+      <p class="date"> {{task.date_debut}} </p>
     </div>
     <div class="content--datefin">
-      <p class="date">12 janvier 2024 </p>
+      <p class="date"> {{task.date_fin}} </p>
     </div>
   </div>
 
@@ -53,14 +53,14 @@
       <div class="item--tasks">
         <div class="task--detail task--detail--md">
           <div class="content--description">
-            <p class="description">description task </p>
+            <p class="description"> {{task.description}} </p>
           </div>
           <div class="content--time">
-            <p class="date">in progress</p>
+            <p class="date">{{task.status}}</p>
           </div>
           <div class="content--progress">
             <progress class="progressBar" value="75" max="100"> </progress>
-            <p class="progress__pourcentage">75%</p>
+            <p class="progress__pourcentage">{{task.progress}}%</p>
           </div>
           <div class="content--others">
             <a class="other-link delete" data-bs-toggle="modal" data-bs-target="#deletetaskmodal">

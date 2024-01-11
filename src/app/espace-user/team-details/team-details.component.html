@@ -31,19 +31,19 @@
     <div class="container-team">
         <div class="content--header">
             <div class="iconTeam">
-              <img src="../../../../assets/pics/teamicon.png" alt="" class="iconCard">
+              <img [src]="'../../../../assets/pics/' + team.icon" alt="" class="iconCard">
             </div>
             <div class="titleCard">
-              <h5 class="card-title">Team MLprojects</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">leader's name</h6>
-              <p class="nbrMember">5 members</p>
+              <h5 class="card-title">{{team.nom}}</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">{{team.leader_name}}</h6>
+              <p class="nbrMember">{{team.nbr_member}} members</p>
             </div>
           </div>
           <div class="content--main">
             <div class="teamgoal">
               <span class="decorgoal"></span>
               <p class="teamGoal">Team's goal : </p>
-              <p class="goal--text">the objective of our team is supposed to develop ML projects</p>
+              <p class="goal--text">{{team.goalTeam}}</p>
             </div>
             <div class="projects">
               <div class="projects--header">

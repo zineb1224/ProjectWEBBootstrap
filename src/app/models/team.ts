@@ -4,6 +4,6 @@ export interface Team {
     icon:string;
     goalTeam:string;
     nbr_member:number;
-    leader?:number;
+    leader_name?:string;
     members?:[{member_id:number}];
 }

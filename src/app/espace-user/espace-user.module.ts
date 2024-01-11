@@ -18,6 +18,8 @@ import { TeamItemComponent } from './my-teams/team-item/team-item.component';
 import { TeamDetailsComponent } from './team-details/team-details.component';
 import { ProjectContentComponent } from './team-details/project-content/project-content.component';
 import { MemberItemComponent } from './team-details/project-content/member-item/member-item.component';
+import { SkillItemComponent } from './my-profil/skill-item/skill-item.component';
+import { CetificatItemComponent } from './my-profil/cetificat-item/cetificat-item.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { MemberItemComponent } from './team-details/project-content/member-item/
     TeamItemComponent,
     TeamDetailsComponent,
     ProjectContentComponent,
-    MemberItemComponent
+    MemberItemComponent,
+    SkillItemComponent,
+    CetificatItemComponent
   ],
   imports: [
     CommonModule,

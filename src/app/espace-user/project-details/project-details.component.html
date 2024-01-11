@@ -30,31 +30,27 @@
     </div>
     <div class="content--project">
         <div class="title--project">
-            <h1 class="title">Project Title</h1>
+            <h1 class="title">{{project.titre}}</h1>
         </div>
         <div class="img--project">
-            <img src="../../../assets/pics/imgprojectInfo.avif" class="img" alt="...">
+            <img [src]="'../../../assets/pics/' + project.image" class="img" alt="...">
         </div>
         <div class="description--project">
             <div class="subtitle--desc">
                 <span class="decor"></span>
                 <h2 class="subtitle">Project Description : </h2>
             </div>
-            <p class="type--project">projet informatique</p>
+            <p class="type--project">{{project.type}}</p>
             <div class="date--project">
-                <div class="date--deb">24 decembre 2023 - </div>
-                <div class="date--fin">12 janvier 2024</div>
+                <div class="date--deb">{{project.date_debut}} - </div>
+                <div class="date--fin">{{project.date_fin}}</div>
                 <div class="period"> ( 19 days )</div>
             </div>
-            <p class="info--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <p class="info--description">{{project.description}}
             </p>
             <div class="team">
                 <h3 id="subtitle--team">Project Team : </h3>
-                <p class="name--team">team 1 </p>
+                <p class="name--team"> {{team.nom}} </p>
             </div>
         </div>
         <div class="tasks">

@@ -16,7 +16,7 @@ const routes: Routes = [
         path:"",component:MyProjectsComponent
       },
       {
-        path:"projectDetail",component:ProjectDetailsComponent
+        path:"projectDetail/:id",component:ProjectDetailsComponent
       },
       {
         path:"myTasks",component:MyTasksComponent
@@ -28,7 +28,7 @@ const routes: Routes = [
         path:"myProfil",component:MyProfilComponent
       },
       {
-        path:"teamDetail",component:TeamDetailsComponent
+        path:"teamDetail/:id",component:TeamDetailsComponent
       },
       {
         path:"test", component:TestComponent
