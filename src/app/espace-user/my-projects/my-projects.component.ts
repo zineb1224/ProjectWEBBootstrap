@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ProjectService } from 'src/app/services/project.service';
 
 
 @Component({
@@ -9,10 +10,16 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class MyProjectsComponent implements OnInit {
 
-  constructor() { }
-  public subjects:any;
+  constructor(private projectService:ProjectService) { }
+  public projects:any;
 
   ngOnInit(): void {
+    this.projectService.getAll().subscribe(
+      {
+        next: (data) => {this.projects = data; console.log(data)},
+        error: (error) => {console.log(error);}
+      }
+    )
   }
 
   repeat(count: number): number[] {

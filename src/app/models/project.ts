@@ -3,6 +3,7 @@ export interface Project {
     titre:string;
     image:string;
     description:string;
+    progress:number;
     type:string;
     date_debut:Date;
     date_fin:Date;

@@ -4,12 +4,13 @@
     width: 260px;
     height: 330px;
     margin: 10px;
-    box-shadow: -2px 2px 4px 2px var(--color-dark-tint4);
+    box-shadow: -2px 3px 5px 2px var(--color-dark-tint5);
+    border: none;
 }
 
 .card img {
     width: 92%;
-    height: 150px;
+    height: 160px;
 }
 
 .titles{
@@ -41,7 +42,7 @@
     align-items: center;
     font-size: 13px;
     color: var(--color-dark-tint2);
-    width: 55%;
+    width: 38%;
     padding: 2px 0px;
 }
 
@@ -74,7 +75,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding:8px 15px 15px;
+    padding:0px 15px 15px;
 }
 
 .progress{

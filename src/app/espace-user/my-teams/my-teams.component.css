@@ -1,0 +1,161 @@
+.container_team{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 30px;
+}
+.ligneTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.titlePage{
+    display: flex;
+    flex-direction: column;
+}
+
+#titlepage{
+    font-size: 27px;
+    color: var(--color-secondary-shade4);
+    font-family: 'Poppins';
+}
+
+#ligneTitle{
+    width: 145px;
+    height: 4px;
+    background-color: var(--color-secondary-shade2);
+    margin-top: -7px;
+}
+
+.btn_ajout{
+    display: flex;
+    padding: 13px 10px 8px;
+}
+
+#btn_ajoutTeam{
+    background: linear-gradient(to right top, var(--color-primary-shade1), var(--color-primary-shade3), var(--color-primary-shade4));
+    box-shadow: -2px 3px 5px 2px var(--color-secondary-shade4);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 20px;
+}
+
+.searchFilter{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search--bar{
+    display: flex;
+    align-items: center;
+    width: 330px;
+    background-color: var(--color-dark-contrast);
+    padding:5px 10px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color-dark-tint4);
+}
+
+.search--icon{
+    height: 21px;
+    width: 21px;
+    color: var(--color-dark-tint1);
+    fill: var(--color-dark-tint3);
+}
+
+.input--search{
+    padding: 3px 8px;
+    width: 95%;
+    border: none;
+}
+
+.input--search::placeholder{
+    color: var(--color-dark-tint3);
+    font-size: 14px;
+}
+
+.listTeams{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.modal-dialog{
+    width: 100%!important;
+}
+
+.modal-title{
+    color: var(--color-dark);
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0!important;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    flex: 14;
+    padding: 6px 0;
+    overflow-x: hidden;
+}
+
+.input-element {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.input {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2px 8px;
+    padding: 4px;
+    width: 100%;
+}
+
+.input label {
+    font-size: 16px;
+    margin: 5px 7px;
+}
+
+.input input {
+    display: flex;
+    align-self: center;
+    background-color: var(--color-dark-tint5);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 5px;
+    width: 98%;
+}
+
+.input-img input {
+    position: relative;
+    align-self: center;
+}
+
+.btn-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 2;
+    padding: 8px;
+}
+
+.btn-footer button {
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.add {
+    background-color: var(--color-primary);
+    border: none;
+    color: #fff;
+}

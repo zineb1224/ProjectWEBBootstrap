@@ -1,11 +1,11 @@
 <div class="card">
-    <img src="../../../../assets/pics/imgprojectInfo.avif" class="card-img-top" alt="..." [routerLink]="'/projectDetail'">
+    <img [src]="'../../../assets/pics/' + project.image" class="card-img-top" alt="..." [routerLink]="'/projectDetail'">
     <div class="card-body titles" [routerLink]="'/projectDetail'">
-      <h5 class="card-title"> Projet1 </h5>
-      <p class="card-text">Projet Informatique.</p>
+      <h5 class="card-title"> {{project.titre}} </h5>
+      <p class="card-text">{{project.type}}</p>
     </div>
     <div class="card-body item-body">
-      <div class="date">24 decembre 2023  12 janvier 2024</div>
+      <div class="date">{{project.date_debut}}  {{project.date_fin}}</div>
       <div class="icons">
         <a class="card-link delete" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon-delete" width="24" height="24" viewBox="0 0 24 24">
@@ -38,7 +38,7 @@
     </div>
     <div class="card-body progressBar">
       <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar bg-info text-dark" style="width: 50%">50%</div>
+        <div class="progress-bar bg-info text-dark" style="width: 50%">{{project.progress}}</div>
       </div>
     </div>
   </div>

@@ -6,6 +6,8 @@ import { MyTasksComponent } from './my-tasks/my-tasks.component';
 import { MyTeamsComponent } from './my-teams/my-teams.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { MyProfilComponent } from './my-profil/my-profil.component';
+import { TestComponent } from './test/test.component';
+import { TeamDetailsComponent } from './team-details/team-details.component';
 
 const routes: Routes = [
   {
@@ -24,6 +26,12 @@ const routes: Routes = [
       },
       {
         path:"myProfil",component:MyProfilComponent
+      },
+      {
+        path:"teamDetail",component:TeamDetailsComponent
+      },
+      {
+        path:"test", component:TestComponent
       }
     ]
   }

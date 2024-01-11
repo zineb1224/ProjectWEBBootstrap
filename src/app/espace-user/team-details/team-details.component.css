@@ -1,0 +1,136 @@
+.page--main{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 6px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 12px;
+}
+
+.btn_back{
+    fill: var(--color-dark-tint1);
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.btn--download{
+    padding: 15px 8px;
+}
+
+.btn_down{
+    padding: 10px 18px;
+    border: none;
+    background-color: var(--color-tertiary);
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.icon-file{
+    width: 21px;
+    height: 21px;
+    fill: white;
+    margin-bottom: 2px;
+}
+
+.container-team{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 12px;
+}
+
+.content--header{
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+}
+
+.iconCard{
+    border: 2px solid var(--color-dark-tint5);
+    border-radius: 10px;
+    width: 85px;
+    height: 85px;
+}
+
+.titleCard{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 15px;
+}
+
+.card-title{
+    font-size: 28px;
+    padding: 4px 2px 2px;
+}
+
+.card-subtitle{
+    font-size: 17px;
+    padding: 2px 5px 0px;
+}
+
+.nbrMember{
+    font-size: 13px;
+    margin: -4px 0px 0px;
+    padding: 0px 5px 0;
+    color: var(--color-dark-tint3);
+}
+
+.content--main{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 16px;
+}
+
+.teamgoal{
+    display: flex;
+    align-items: center;
+    margin: 8px 0px;
+}
+
+.decorgoal{
+    width: 50px;
+    height: 4px;
+    background-color: var(--color-secondary-shade2);
+}
+
+.teamGoal{
+    font-size: 18px;
+    margin: 0px 8px;
+}
+
+.goal--text{
+    font-size: 15px;
+    margin: 0px 5px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects--header{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px 0px;
+}
+
+.projectdecor{
+    width: 50px;
+    height: 4px;
+    background-color: var(--color-secondary-shade2);
+}
+
+.projects--content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+

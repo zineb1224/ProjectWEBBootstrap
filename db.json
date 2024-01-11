@@ -1,0 +1,76 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "titre": "MLproject",
+      "image": "AIML-Thumbnail.png",
+      "description": "le projet MLproject est un projet infromatique specialement dans le domaine AI et le Machine Learning ",
+      "type":"projet informatique",
+      "progress": 50,
+      "date_debut":"10-01-2024",
+      "date_fin":"18-01-2024",
+      "team_id?":1
+    },
+    {
+      "id": 2,
+      "titre": "DLproject",
+      "image": "imgprojectInfo.avif",
+      "description": "le projet DLproject est un projet infromatique specialement dans le domaine AI et le Deep Learning ",
+      "type":"projet informatique",
+      "progress": 70,
+      "date_debut":"08-01-2024",
+      "date_fin":"28-01-2024",
+      "team_id?":1
+    }
+  ],
+  "members": [
+    {
+      "id":"",
+      "nom":"",
+      "email":"",
+      "password":"",
+      "telephone":"string",
+      "date_naissance":"Date",
+      "sexe":"string",
+      "cin":"string",
+      "photo_profile":"string",
+      "skills":[{"skill_id":1}]
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "nom":"string",
+      "icon":"string",
+      "goalTeam":"gbrg",
+      "nbr_member":1,
+      "leader":1,
+      "members":[{"member_id":1}]
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "titre":"string",
+      "description":"string",
+      "status":"string",
+      "progress":"string",
+      "date_debut":"Date",
+      "date_fin":"Date",
+      "member_id": 1,
+      "project_id": 1
+    },
+    {
+      "id": 2,
+      "titre":"string",
+      "description":"string",
+      "status":"string",
+      "progress":"string",
+      "date_debut":"Date",
+      "date_fin":"Date",
+      "member_id": 1,
+      "project_id": 1
+    }
+  ]
+  
+}
