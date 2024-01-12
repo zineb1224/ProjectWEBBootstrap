@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ProjectService } from 'src/app/services/project.service';
 
 @Component({
   selector: 'app-task-item',
@@ -9,14 +10,18 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class TaskItemComponent implements OnInit {
 
   @Input() task:any;
+  public project:any;
   public isShown:boolean = false;
-  constructor() { }
+  constructor(private projectsService: ProjectService) { }
 
   public showDetails(){
     this.isShown = ! this.isShown;
   }
 
   ngOnInit(): void {
+    this.projectsService.getById(this.task.project_id).subscribe(
+      (data) => this.project = data
+    )
   }
 
   public formtasks = new FormGroup({

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ProjectService } from 'src/app/services/project.service';
 import { TeamService } from 'src/app/services/team.service';
 
 @Component({
@@ -11,7 +12,8 @@ export class TeamDetailsComponent implements OnInit {
 
   public id!: number;
   public team:any;
-  constructor(private router:Router, private activatedRouter:ActivatedRoute, private teamService: TeamService) { }
+  public items:any;
+  constructor(private router:Router, private activatedRouter:ActivatedRoute, private teamService: TeamService, private projectsService:ProjectService) { }
 
   ngOnInit(): void {
     this.activatedRouter.params.subscribe(data=>{
@@ -23,6 +25,14 @@ export class TeamDetailsComponent implements OnInit {
         error: (error) => {console.log(error);}
       }
     )
+
+    this.projectsService.getAll().subscribe(
+      (data) => {
+        this.items=data;
+        this.items = this.items.filter((item:any) => item.id == this.id);
+      }
+    )
+    
   }
 
   public back(){

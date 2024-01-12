@@ -68,24 +68,12 @@
                           <th scope="col">Status</th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody *ngFor="let task of tasks">
                         <tr>
-                          <th scope="row">1</th>
-                          <td>task 1 </td>
-                          <td>Zineb Elhz</td>
-                          <td>in progress</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>task 2 </td>
-                          <td>Zineb Elhz</td>
-                          <td>in progress</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>task 3 </td>
-                          <td>Zineb Elhz</td>
-                          <td>in progress</td>
+                          <th scope="row">{{task.id}}</th>
+                          <td>{{task.titre}}</td>
+                          <td>{{task.respo}}</td>
+                          <td>{{task.status}}</td>
                         </tr>
                       </tbody>
                 </table>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { TaskService } from 'src/app/services/task.service';
 
 @Component({
   selector: 'app-project-content',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectContentComponent implements OnInit {
 
-  constructor() { }
+  @Input()item:any;
+  public tasks:any;
+  constructor(private taskService:TaskService) { }
 
   ngOnInit(): void {
+    this.taskService.getAll().subscribe(
+      {
+        next:(data)=>{
+          this.tasks=data;
+          this.tasks = this.tasks.filter((task:any) => task.project_id == this.item.id);
+        },
+        error:(e)=>console.log("Error al obtener las tareas")
+      }
+    )
   }
 
   repeat(count: number): number[] {

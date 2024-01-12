@@ -51,8 +51,8 @@
                 <p class="teamGoal">Team's projects : </p>
               </div>
               <div class="projects--content">
-                <div class="item" *ngFor="let _ of repeat(6); let i = index">
-                  <app-project-content></app-project-content>
+                <div class="item" *ngFor="let item of items">
+                  <app-project-content [item]="item"></app-project-content>
               </div>
               </div>
             </div>

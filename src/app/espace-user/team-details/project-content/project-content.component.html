@@ -1,7 +1,7 @@
 <div class="item--content item--content--md">
     <div class="quick--details quick--details--md">
       <div class="content--task">
-        <p class="name__task">Project title 1 </p>
+        <p class="name__task">{{item.titre}}</p>
       </div>
     </div>
   
@@ -14,8 +14,8 @@
         <p class="header__text text__others">date fin</p>
       </div>
       <div class="details--main">
-        <div class="item" *ngFor="let _ of repeat(5); let i = index">
-            <app-member-item></app-member-item>
+        <div class="item" *ngFor="let task of tasks">
+            <app-member-item [task]="task"></app-member-item>
         </div>
       </div>
   
