@@ -22,8 +22,8 @@
       </div>
       <p class="card-text">{{team.goalTeam}}</p>
       <div class="buttons">
-        <button class="btn_more" [routerLink]="'/teamDetail/'+ team.id">More details</button>
-        <div class="btn_members">{{team.nbr_member}} members </div>
+        <button class="btn_more" [routerLink]="'/teamDetail/'+ team.id" (click)="showteamDetails()">More details</button>
+        <div class="btn_members" data-bs-toggle="modal" data-bs-target="#showmembers" (click)="showmembers()">{{team.nbr_member}} members </div>
       </div>
       
     </div>
@@ -49,3 +49,27 @@ aria-labelledby="staticBackdropLabel" aria-hidden="true">
   </div>
 </div>
 </div>
+
+
+  <!-- Modal show team -->
+  <div class="modal fade" id="showmembers" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Team's members</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="members">
+          <div class="item--member" *ngFor="let member of members">
+            <app-item-member [member]="member"></app-item-member>
+        </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+  </div>

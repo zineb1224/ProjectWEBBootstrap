@@ -1,0 +1,20 @@
+.item{
+    display: flex;
+    align-items: center;
+}
+
+.member_img{
+    width: 50px;
+    height: 50px;
+}
+
+.name_member{
+    font-size: 15px;
+    padding: 0px 15px;
+    margin: 0;
+}
+
+.mail_member{
+    color: var(--color-dark-tint2);
+    margin: 0;
+}

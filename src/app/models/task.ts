@@ -6,6 +6,7 @@ export interface Task {
     progress:string;
     date_debut:Date;
     date_fin:Date;
-    member_id?:number;
+    respo?:string;
+    respo_id?:number;
     project_id?:number;
 }

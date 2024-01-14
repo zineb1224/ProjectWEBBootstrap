@@ -21,6 +21,28 @@
       "date_debut":"01/08/2024",
       "date_fin":"01/28/2024",
       "team_id":2
+    },
+    {
+      "id": 3,
+      "titre": "CPproject",
+      "image": "cpprojet.png",
+      "description": "le projet CPproject est un projet infromatique specialement dans le domaine Competetive Programming consiste à improuver les connaissances dans la programmation ",
+      "type":"projet informatique",
+      "progress": 80,
+      "date_debut":"01/13/2024",
+      "date_fin":"03/15/2024",
+      "team_id":3
+    },
+    {
+      "id": 4,
+      "titre": "Roboticproject",
+      "image": "robotic.jpg",
+      "description": "le projet Roboticproject est un projet infromatique specialement dans le domaine AI et le Robotique afin de combiner ces deux domaines pour un résultat en réalité ",
+      "type":"projet informatique",
+      "progress": 20,
+      "date_debut":"01/14/2024",
+      "date_fin":"02/10/2024",
+      "team_id":4
     }
   ],
   "members": [
@@ -40,6 +62,236 @@
         "skill_id":1,
         "skill_title":"Angular",
         "skill_icon": "angular.png"
+      },
+      {
+        "skill_id":2,
+        "skill_title":"Data Science",
+        "skill_icon": "dsicon.png"
+      },
+      {
+        "skill_id":3,
+        "skill_title":"Bootstrap",
+        "skill_icon": "bootstrap-logo.png"
+      },
+      {
+        "skill_id":4,
+        "skill_title":"Html",
+        "skill_icon": "html.png"
+      },
+      {
+        "skill_id":5,
+        "skill_title":"CSS",
+        "skill_icon": "css.png"
+      }
+    ],
+      "certificats":[
+        {
+        "certificat_id":1,
+        "certificat_etablissement_logo":"ibm.png",
+        "certificat_name":"certificat name",
+        "certificat_etablissement":"IBM"
+        },
+        {
+          "certificat_id":2,
+          "certificat_etablissement_logo":"coursera.png",
+          "certificat_name":"certificat name",
+          "certificat_etablissement":"Coursera"
+        }
+      ]
+    },
+    {
+      "id":2,
+      "nom":"El hanafi Lina",
+      "email":"name2_name2@gmail.com",
+      "password":"lina1234",
+      "telephone":"5629188208",
+      "date_naissance":"10/04/2001",
+      "sexe":"feminin",
+      "cin":"Ex453052",
+      "photo_profile":"vect-ex1.png",
+      "description":"The purpose of lorem ipsum is to create a natural looking block of text that doesn't distract from the layout.",
+      "skills":[
+      {
+        "skill_id":1,
+        "skill_title":"Robotic",
+        "skill_icon": "roboticicon.png"
+      },
+      {
+        "skill_id":2,
+        "skill_title":"Html",
+        "skill_icon": "html.png"
+      },
+      {
+        "skill_id":3,
+        "skill_title":"CSS",
+        "skill_icon": "css.png"
+      }
+    ],
+      "certificats":[
+        {
+        "certificat_id":1,
+        "certificat_etablissement_logo":"ibm.png",
+        "certificat_name":"certificat name",
+        "certificat_etablissement":"IBM"
+        },
+        {
+          "certificat_id":2,
+          "certificat_etablissement_logo":"coursera.png",
+          "certificat_name":"certificat name",
+          "certificat_etablissement":"Coursera"
+        }
+      ]
+    },
+    {
+      "id":3,
+      "nom":"Samali Abderrahmane",
+      "email":"name3_name3@gmail.com",
+      "password":"samali12345",
+      "telephone":"6085905208",
+      "date_naissance":"10/04/2000",
+      "sexe":"masculin",
+      "cin":"Ex408651",
+      "photo_profile":"vect-ex2.png",
+      "description":"The purpose of lorem ipsum is to create a natural looking block of text that doesn't distract from the layout.",
+      "skills":[
+        {
+          "skill_id":1,
+          "skill_title":"Data Science",
+          "skill_icon": "dsicon.png"
+        },
+        {
+        "skill_id":2,
+        "skill_title":"Machine Learning",
+        "skill_icon": "mlicon.png"
+      },
+        {
+        "skill_id":3,
+        "skill_title":"Deep Learning",
+        "skill_icon": "dlicon.png"
+      }
+    ],
+      "certificats":[
+        {
+        "certificat_id":1,
+        "certificat_etablissement_logo":"ibm.png",
+        "certificat_name":"certificat name",
+        "certificat_etablissement":"IBM"
+        },
+        {
+          "certificat_id":2,
+          "certificat_etablissement_logo":"coursera.png",
+          "certificat_name":"certificat name",
+          "certificat_etablissement":"Coursera"
+        }
+      ]
+    },
+    {
+      "id":4,
+      "nom":"Berquia Mouad",
+      "email":"name4_name4@gmail.com",
+      "password":"mouad123456",
+      "telephone":"6250205278",
+      "date_naissance":"04/05/2002",
+      "sexe":"masculin",
+      "cin":"Ex089654",
+      "photo_profile":"vect-ex2.png",
+      "description":"The purpose of lorem ipsum is to create a natural looking block of text that doesn't distract from the layout.",
+      "skills":[
+        {
+        "skill_id":1,
+        "skill_title":"Machine Learning",
+        "skill_icon": "mlicon.png"
+      },
+      {
+        "skill_id":2,
+        "skill_title":"Deep Learning",
+        "skill_icon": "dlicon.png"
+      },
+      {
+        "skill_id":3,
+        "skill_title":"C++",
+        "skill_icon": "c++icon.png"
+      },
+      {
+        "skill_id":4,
+        "skill_title":"CP",
+        "skill_icon": "cpicon.ico"
+      }
+    ],
+      "certificats":[
+        {
+        "certificat_id":1,
+        "certificat_etablissement_logo":"ibm.png",
+        "certificat_name":"certificat name",
+        "certificat_etablissement":"IBM"
+        },
+        {
+          "certificat_id":2,
+          "certificat_etablissement_logo":"coursera.png",
+          "certificat_name":"certificat name",
+          "certificat_etablissement":"Coursera"
+        }
+      ]
+    },
+    {
+      "id":5,
+      "nom":"Obeidat Jamal Eddine",
+      "email":"name5_name5@gmail.com",
+      "password":"jamal12345",
+      "telephone":"6591423507",
+      "date_naissance":"08/17/2002",
+      "sexe":"masculin",
+      "cin":"Ex958459",
+      "photo_profile":"vect-ex2.png",
+      "description":"The purpose of lorem ipsum is to create a natural looking block of text that doesn't distract from the layout.",
+      "skills":[
+        {
+        "skill_id":1,
+        "skill_title":"Excel",
+        "skill_icon": "excelicon.png"
+      },
+      {
+        "skill_id":2,
+        "skill_title":"Power BI",
+        "skill_icon": "powerbiicon.png"
+      },
+      {
+        "skill_id":3,
+        "skill_title":"Illustrator",
+        "skill_icon": "illustratoricon.png"
+      }
+    ],
+      "certificats":[
+        {
+        "certificat_id":1,
+        "certificat_etablissement_logo":"ibm.png",
+        "certificat_name":"certificat name",
+        "certificat_etablissement":"IBM"
+        },
+        {
+          "certificat_id":2,
+          "certificat_etablissement_logo":"coursera.png",
+          "certificat_name":"certificat name",
+          "certificat_etablissement":"Coursera"
+        }
+      ]
+    },
+    {
+      "id":6,
+      "nom":"Dahhou Zouhair",
+      "email":"name6_name6@gmail.com",
+      "password":"zouhair5724",
+      "telephone":"6854687148",
+      "date_naissance":"05/12/2002",
+      "sexe":"masculin",
+      "cin":"Ex458658",
+      "photo_profile":"vect-ex2.png",
+      "description":"The purpose of lorem ipsum is to create a natural looking block of text that doesn't distract from the layout.",
+      "skills":[
+        {
+        "skill_id":1,
+        "skill_title":"Data Science",
+        "skill_icon": "dsicon.png"
       },
       {
         "skill_id":2,
@@ -71,6 +323,49 @@
           "certificat_etablissement":"Coursera"
         }
       ]
+    },
+    {
+      "id":7,
+      "nom":"Zarouli Ahmed Amine",
+      "email":"name7_name7@gmail.com",
+      "password":"amine1234567",
+      "telephone":"7736854189",
+      "date_naissance":"03/29/2002",
+      "sexe":"masculin",
+      "cin":"Ex687471",
+      "photo_profile":"vect-ex2.png",
+      "description":"The purpose of lorem ipsum is to create a natural looking block of text that doesn't distract from the layout.",
+      "skills":[
+        {
+        "skill_id":1,
+        "skill_title":"Java",
+        "skill_icon": "javaicon.png"
+      },
+      {
+        "skill_id":2,
+        "skill_title":"CP",
+        "skill_icon": "cpicon.ico"
+      },
+      {
+        "skill_id":3,
+        "skill_title":"Data Science",
+        "skill_icon": "dsicon.png"
+      }
+    ],
+      "certificats":[
+        {
+        "certificat_id":1,
+        "certificat_etablissement_logo":"ibm.png",
+        "certificat_name":"certificat name",
+        "certificat_etablissement":"IBM"
+        },
+        {
+          "certificat_id":2,
+          "certificat_etablissement_logo":"coursera.png",
+          "certificat_name":"certificat name",
+          "certificat_etablissement":"Coursera"
+        }
+      ]
     }
   ],
   "teams": [
@@ -81,25 +376,80 @@
       "goalTeam":"the objective of our team is supposed to develop ML projects",
       "nbr_member":3,
       "leader_name":"El houz Zineb",
-      "members":[{"member_id":1}]
+      "members":[
+        {
+          "member_id":1
+        },
+        {
+          "member_id":3
+        },
+        {
+          "member_id":4
+        }
+      ]
     },
     {
       "id": 2,
       "nom":"Team DLprojects",
       "icon":"dlteam.png",
       "goalTeam":"the objective of our team is supposed to develop DL projects",
-      "nbr_member":5,
+      "nbr_member":4,
       "leader_name":"Samali Abedrrahmane",
-      "members":[{"member_id":1}]
+      "members":[
+        {
+        "member_id":1
+        },
+        {
+          "member_id":3
+        },
+        {
+          "member_id":4
+        },
+        {
+          "member_id":6
+        }
+      ]
     },
     {
       "id": 3,
       "nom":"Team CP",
       "icon":"teamicon.png",
       "goalTeam":"the objective of our team is supposed to improve problem solving skills",
-      "nbr_member":2,
+      "nbr_member":3,
       "leader_name":"Berquia Mouad",
-      "members":[{"member_id":1}]
+      "members":[
+        {
+        "member_id":1
+        },
+        {
+          "member_id":4
+        },
+        {
+          "member_id":7
+        }
+    ]
+    },
+    {
+      "id": 4,
+      "nom":"Team Robotic",
+      "icon":"teamicon.png",
+      "goalTeam":"the objective of our team is supposed to improve problem solving skills",
+      "nbr_member":4,
+      "leader_name":"El hanafi Lina",
+      "members":[
+        {
+        "member_id":1
+        },
+        {
+          "member_id":2
+        },
+        {
+          "member_id":5
+        },
+        {
+          "member_id":6
+        }
+    ]
     }
   ],
   "tasks": [
@@ -112,10 +462,23 @@
       "date_debut":"01/10/2024",
       "date_fin":"01/13/2024",
       "respo": "El houz Zineb",
+      "respo_id":1,
       "project_id": 1
     },
     {
       "id": 2,
+      "titre":"ML model",
+      "description":"write a ML model that solve the prob",
+      "status":"in progress",
+      "progress":40,
+      "date_debut":"01/14/2024",
+      "date_fin":"01/18/2024",
+      "respo": "Samali Abderrahmane",
+      "respo_id":3,
+      "project_id": 1
+    },
+    {
+      "id": 3,
       "titre":"DL model",
       "description":"write a DL model that solve the prob",
       "status":"in progress",
@@ -123,6 +486,7 @@
       "date_debut":"01/14/2024",
       "date_fin":"01/18/2024",
       "respo": "El houz Zineb",
+      "respo_id":1,
       "project_id": 2
     }
   ]

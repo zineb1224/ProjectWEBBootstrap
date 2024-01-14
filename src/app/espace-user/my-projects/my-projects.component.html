@@ -26,7 +26,7 @@
                 </g>
             </svg>
 
-            <input type="search" class="input--search" placeholder="Search a project ..." name="search">
+            <input type="search" class="input--search" placeholder="Search a project ..." name="search" (keyup)="searchFilter()" [(ngModel)]="filterProjects">
         </div>
     </div>
     <div class="listProjects">

@@ -1,6 +1,6 @@
 <div class="main--profile">
     <div class="main--title">
-        <h1 class="title">Bienvenue dans votre profile</h1>
+        <h1 class="title">Welcome to your profile</h1>
         <span class="title__underline"></span>
     </div>
 
@@ -120,7 +120,7 @@
                     <h1 class="subject__title">My skills</h1>
                     <span class="subjectTitle__underline"></span>
                 </div>
-                <div class="btn--ajt">
+                <div class="btn--ajt" data-bs-toggle="modal" data-bs-target="#addskillModal">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon_add" width="24" height="24" viewBox="0 0 24 24">
                         <g id="vuesax_bold_add-circle" data-name="vuesax/bold/add-circle" transform="translate(-108 -252)">
                           <g id="add-circle">
@@ -143,7 +143,7 @@
                     <h1 class="diplome__title">My certificats</h1>
                     <span class="diplomeTitle__underline"></span>
                 </div>
-                <div class="btn--ajt">
+                <div class="btn--ajt" data-bs-toggle="modal" data-bs-target="#addcertificatModal">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon_add" width="24" height="24" viewBox="0 0 24 24">
                         <g id="vuesax_bold_add-circle" data-name="vuesax/bold/add-circle" transform="translate(-108 -252)">
                           <g id="add-circle">
@@ -178,7 +178,7 @@
             <form id="form" [formGroup]="formEdit" >
                 <main class="main-form">
                     <div class="edit--img">
-                        <img [src]="" alt="" class="img">
+                        <img [src]="'../../../assets/pics/' + member.photo_profile" alt="" class="img">
                         <div class="button__editImg" data-bs-toggle="modal" data-bs-target="#changepicModal" (click)="editImg()">
                             Profile Photo edit
                         </div>
@@ -188,25 +188,25 @@
                         <div class="input-element">
                             <div class="input select-name">
                                 <label for="">full name :</label>
-                                <input type="text" formControlName="name" [placeholder]="" [readonly]="true">
+                                <input type="text" formControlName="name" [placeholder]="member.nom" [readonly]="true">
                             </div>
                         </div>
                         <div class="input-element">
                             <div class="input input-email">
                                 <label for="">Email :</label>
-                                <input type="text" formControlName="email" [placeholder]="" [readonly]="true">
+                                <input type="text" formControlName="email" [placeholder]="member.email" [readonly]="true">
                             </div>
                         </div>
                         <div class="input-element">
                             <div class="input input-email">
                                 <label for="">Phone number :</label>
-                                <input type="text" formControlName="num" [placeholder]="">
+                                <input type="text" formControlName="num" [placeholder]="member.telephone">
                             </div>
                         </div>
                         <div class="input-element">
                             <div class="input input-email">
                                 <label for="">CIN :</label>
-                                <input type="text" formControlName="cin" [placeholder]="">
+                                <input type="text" formControlName="cin" [placeholder]="member.cin">
                             </div>
                         </div>
                     </div>
@@ -272,5 +272,84 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal add skill-->
+  <div class="modal fade" id="addskillModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Add Skill</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form [formGroup]="formSkills" (ngSubmit)="addSkill()" id="form">
+                  <main class="main-form">
+                      <div class="input-element">
+                          <div class="input input-title">
+                              <label for="">Skill's name :</label>
+                              <input type="text" formControlName="name" placeholder="Skill's name ">
+                          </div>
+                      </div>
+                      <div class="input-element">
+                          <div class="input input-img">
+                              <label for="">Skill's icon :</label>
+                              <input type="file" (change)="this.onFilechange($event)" placeholder="Search an icon ">
+                          </div>
+                      </div>
+                  </main>
+                  <div class="btn-footer">
+                      <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                      <button class="btn add" type="submit">Confirm</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  <!-- Modal add certificat-->
+  <div class="modal fade" id="addcertificatModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Add Certificat</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form [formGroup]="formCertificats" (ngSubmit)="addCertificat()" id="form">
+                  <main class="main-form">
+                      <div class="input-element">
+                          <div class="input input-title">
+                              <label for="">Certificat's title :</label>
+                              <input type="text" formControlName="title" placeholder="Certificat's title  ">
+                          </div>
+                      </div>
+                      <div class="input-element">
+                        <div class="input input-title">
+                            <label for="">etablissment's name :</label>
+                            <input type="text" formControlName="name_etablishment" placeholder="etablissment's name ">
+                        </div>
+                    </div>
+                      <div class="input-element">
+                          <div class="input input-img">
+                              <label for="">etablishment's icon :</label>
+                              <input type="file" (change)="this.onFilechange($event)" placeholder="Search an icon ">
+                          </div>
+                      </div>
+                  </main>
+                  <div class="btn-footer">
+                      <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                      <button class="btn add" type="submit">Confirm</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+
 
 

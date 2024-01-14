@@ -1,0 +1,143 @@
+<div class="main--profile">
+    <div class="header">
+        <div class="btn--back">
+            <svg xmlns="http://www.w3.org/2000/svg" class="btn_back" width="26" height="26" viewBox="0 0 24 24" (click)="back()">
+                <g id="vuesax_outline_arrow-left" data-name="vuesax/outline/arrow-left" transform="translate(-684 -188)">
+                  <g id="arrow-left">
+                    <path id="Vector" d="M6.817,13.637a.742.742,0,0,1-.53-.22L.218,7.347a.754.754,0,0,1,0-1.06L6.287.218a.75.75,0,0,1,1.06,1.06l-5.54,5.54,5.54,5.54a.754.754,0,0,1,0,1.06A.725.725,0,0,1,6.817,13.637Z" transform="translate(686.753 193.182)" fill="#292d32"/>
+                    <path id="Vector-2" data-name="Vector" d="M17.58,1.5H.75A.755.755,0,0,1,0,.75.755.755,0,0,1,.75,0H17.58a.755.755,0,0,1,.75.75A.755.755,0,0,1,17.58,1.5Z" transform="translate(686.92 199.25)" fill="#292d32"/>
+                    <path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(684 188)" fill="none" opacity="0"/>
+                  </g>
+                </g>
+              </svg>              
+        </div>
+        <div class="main--title">
+            <h1 class="title">Welcome to this profile</h1>
+            <span class="title__underline"></span>
+        </div>
+    </div>
+   
+    <div class="profile--content profile--content--md">
+        <div class="profile__quickinfo">
+            <img [src]="'../../../assets/pics/' + member.photo_profile" alt="" class="img__profile">
+            <p class="cin__user">{{member.cin}}</p>
+        </div>
+        <span class="line__separate"></span>
+        <div class="profile__details">
+            <div class="nom--user--edit">
+                <div class="nom__user">
+                    <p class="nom__user_fr">{{member.nom}}</p>
+                </div>
+            </div>
+
+            <div class="description">
+                <p class="descirption__text">{{member.description}}</p>
+            </div>
+            <div class="plus__info">
+                <div class="item__info">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icons--info" viewBox="0 0 24 24">
+                        <g id="vuesax_bold_call" data-name="vuesax/bold/call" transform="translate(-108 -188)">
+                            <g id="call">
+                                <path id="Vector"
+                                    d="M9.05,12.95,7.2,14.8a1,1,0,0,1-1.41.01c-.11-.11-.22-.21-.33-.32a28.414,28.414,0,0,1-2.79-3.27A17.828,17.828,0,0,1,.71,7.81,8.586,8.586,0,0,1,0,4.54,5.173,5.173,0,0,1,.36,2.61,4.6,4.6,0,0,1,1.51.94,2.93,2.93,0,0,1,3.59,0,1.879,1.879,0,0,1,4.4.18a1.63,1.63,0,0,1,.67.56L7.39,4.01a3.422,3.422,0,0,1,.4.7,1.581,1.581,0,0,1,.14.61,1.357,1.357,0,0,1-.21.71,3.4,3.4,0,0,1-.56.71l-.76.79a.535.535,0,0,0-.16.4.908.908,0,0,0,.03.23c.03.08.06.14.08.2a8.3,8.3,0,0,0,.93,1.28c.45.52.93,1.05,1.45,1.58.1.1.21.2.31.3A1,1,0,0,1,9.05,12.95Z"
+                                    transform="translate(110 190)" fill="#292d32" />
+                                <path id="Vector-2" data-name="Vector"
+                                    d="M12.37,4.29a2.54,2.54,0,0,1-.15.85,2.442,2.442,0,0,1-.1.24,4.126,4.126,0,0,1-.68,1.02A4.508,4.508,0,0,1,9.8,7.58c-.01,0-.02.01-.03.01a5.052,5.052,0,0,1-1.92.37,8.334,8.334,0,0,1-3.26-.73A17.564,17.564,0,0,1,1.15,5.25C.76,4.96.37,4.67,0,4.36L3.27,1.09a5.618,5.618,0,0,0,.74.48c.05.02.11.05.18.08a.69.69,0,0,0,.25.04.55.55,0,0,0,.41-.17L5.61.77A3.068,3.068,0,0,1,6.33.21,1.332,1.332,0,0,1,7.04,0a1.6,1.6,0,0,1,.61.13,3.868,3.868,0,0,1,.7.39l3.31,2.35a1.517,1.517,0,0,1,.55.64A2.052,2.052,0,0,1,12.37,4.29Z"
+                                    transform="translate(117.6 202.04)" fill="#292d32" />
+                                <path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z"
+                                    transform="translate(132 212) rotate(180)" fill="none" opacity="0" />
+                            </g>
+                        </g>
+                    </svg>
+                    <p class="info--text">{{member.telephone}}</p>
+                </div>
+                <div class="item__info">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icons--info" viewBox="0 0 24 24">
+                        <g id="vuesax_bold_gift" data-name="vuesax/bold/gift" transform="translate(-236 -252)">
+                            <path id="Vector"
+                                d="M16,1V7a4,4,0,0,1-4,4H4A4,4,0,0,1,0,7V1A1,1,0,0,1,1,0H2.97a1,1,0,0,1,1,1V4.14A2.014,2.014,0,0,0,5.03,5.91a1.933,1.933,0,0,0,.94.24,1.963,1.963,0,0,0,1.09-.33l.95-.62.88.59a1.971,1.971,0,0,0,2.04.11A1.992,1.992,0,0,0,12,4.13V1a1,1,0,0,1,1-1h2A1,1,0,0,1,16,1Z"
+                                transform="translate(240 263)" fill="#292d32" />
+                            <path id="Vector-2" data-name="Vector"
+                                d="M19,2V3a1.8,1.8,0,0,1-2,2H2A1.777,1.777,0,0,1,0,3V2A1.777,1.777,0,0,1,2,0H17A1.8,1.8,0,0,1,19,2Z"
+                                transform="translate(238.5 257)" fill="#292d32" />
+                            <path id="Vector-3" data-name="Vector"
+                                d="M5.768,3H.248a.936.936,0,0,1,.03-1.3L1.7.278a.96.96,0,0,1,1.35,0Z"
+                                transform="translate(241.872 254.003)" fill="#292d32" />
+                            <path id="Vector-4" data-name="Vector"
+                                d="M5.52,3H0L2.72.278a.96.96,0,0,1,1.35,0L5.49,1.7A.936.936,0,0,1,5.52,3Z"
+                                transform="translate(248.35 254.003)" fill="#292d32" />
+                            <path id="Vector-5" data-name="Vector"
+                                d="M5.03,0a1,1,0,0,1,1,1V4.13a.994.994,0,0,1-1.55.83l-.9-.6a1,1,0,0,0-1.1,0l-.94.62A.993.993,0,0,1,0,4.15V1A1,1,0,0,1,1,0Z"
+                                transform="translate(244.94 263)" fill="#292d32" />
+                            <path id="Vector-6" data-name="Vector" d="M0,0H24V24H0Z"
+                                transform="translate(260 276) rotate(180)" fill="none" opacity="0" />
+                        </g>
+                    </svg>
+                    <p class="info--text">{{member.date_naissance}}</p>
+                </div>
+                <div class="item__info">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icons--info" viewBox="0 0 24 24">
+                        <g id="vuesax_bold_sms" data-name="vuesax/bold/sms" transform="translate(-556 -252)">
+                            <g id="sms">
+                                <path id="Vector" d="M0,0H24V24H0Z" transform="translate(556 252)" fill="none"
+                                    opacity="0" />
+                                <path id="Vector-2" data-name="Vector"
+                                    d="M15,0H5C2,0,0,1.5,0,5v7c0,3.5,2,5,5,5H15c3,0,5-1.5,5-5V5C20,1.5,18,0,15,0Zm.47,6.09-3.13,2.5a3.861,3.861,0,0,1-4.68,0L4.53,6.09a.769.769,0,0,1-.12-1.06.748.748,0,0,1,1.05-.12l3.13,2.5a2.386,2.386,0,0,0,2.81,0l3.13-2.5a.738.738,0,0,1,1.05.12A.759.759,0,0,1,15.47,6.09Z"
+                                    transform="translate(558 255.5)" fill="#292d32" />
+                            </g>
+                        </g>
+                    </svg>
+                    <p class="info--text">{{member.email}}</p>
+                </div>
+                <div class="item__info">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icons--info" viewBox="0 0 24 24">
+                        <g id="vuesax_bold_frame" data-name="vuesax/bold/frame" transform="translate(-108 -252)">
+                            <g id="frame">
+                                <path id="Vector"
+                                    d="M4.75,0a4.746,4.746,0,0,0-.12,9.49.807.807,0,0,1,.22,0h.07A4.746,4.746,0,0,0,4.75,0Z"
+                                    transform="translate(115.25 254)" fill="#292d32" />
+                                <path id="Vector-2" data-name="Vector"
+                                    d="M12.12,1.395a9.929,9.929,0,0,0-10.15,0A3.947,3.947,0,0,0,0,4.625a3.914,3.914,0,0,0,1.96,3.21,9.239,9.239,0,0,0,5.08,1.41,9.239,9.239,0,0,0,5.08-1.41,3.945,3.945,0,0,0,1.96-3.23A3.937,3.937,0,0,0,12.12,1.395Z"
+                                    transform="translate(112.96 264.755)" fill="#292d32" />
+                                <path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z"
+                                    transform="translate(132 276) rotate(180)" fill="none" opacity="0" />
+                            </g>
+                        </g>
+                    </svg>
+                    <p class="info--text">{{member.sexe}} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="user--details user--details--md">
+        <div class="user__skills">
+            <div class="skill--header">
+                <div class="titles">
+                    <h1 class="subject__title">My skills</h1>
+                    <span class="subjectTitle__underline"></span>
+                </div>
+            </div>
+            <div class="list--skills">
+                <div class="item--certificat" *ngFor="let skill of skills">
+                    <app-item-skill [skill]="skill"></app-item-skill>
+                </div>
+            </div>
+        </div>
+        <div class="user__certificats">
+            <div class="certificat--header">
+                <div class="titles">
+                    <h1 class="diplome__title">My certificats</h1>
+                    <span class="diplomeTitle__underline"></span>
+                </div>
+            </div>
+            
+            <div class="list--diplomes">
+                <div class="item--certificat" *ngFor="let cert of certificats">
+                    <app-item-certi [certificat]="cert"></app-item-certi>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -18,6 +18,7 @@ export class MyTasksComponent implements OnInit {
       {
         next: (data) => {
           this.tasks = data;
+          this.tasks = this.tasks.filter((task:any)=> task.respo_id == 1)
           console.log(data);
         },
         error: (error) => {console.log(error);}

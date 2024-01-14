@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MemberService } from 'src/app/services/member.service';
 
 @Component({
   selector: 'app-team-item',
@@ -8,9 +9,21 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TeamItemComponent implements OnInit {
 
   @Input() team:any;
-  constructor() { }
+  public members:any;
+
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
   }
 
+  public showmembers(){
+    this.members = this.team.members;
+  }
+
+  public showteamDetails(){
+    localStorage.clear()
+    localStorage.setItem("url", '/teamDetail/'+ this.team.id)
+  }
 }

@@ -5,7 +5,7 @@ export interface Project {
     description:string;
     progress:number;
     type:string;
-    date_debut:Date;
-    date_fin:Date;
+    date_debut:string;
+    date_fin:string;
     team_id?:number;
 }

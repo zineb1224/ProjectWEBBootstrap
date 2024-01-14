@@ -1,6 +1,7 @@
 <div class="item--tasks">
     <div class="task--detail task--detail--md">
-      <div class="content--member">
+      <div class="content--member" (click)="showProfil(member.id)">
+        <img [src]="'../../../../../assets/pics/' + member.photo_profile" alt="" class="member_img">
         <p class="member"> {{task.respo}} </p>
       </div>
       <div class="content--task">

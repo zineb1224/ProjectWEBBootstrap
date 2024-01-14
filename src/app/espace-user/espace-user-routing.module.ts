@@ -8,6 +8,7 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
 import { MyProfilComponent } from './my-profil/my-profil.component';
 import { TestComponent } from './test/test.component';
 import { TeamDetailsComponent } from './team-details/team-details.component';
+import { MemberProfilComponent } from './member-profil/member-profil.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,9 @@ const routes: Routes = [
       },
       {
         path:"teamDetail/:id",component:TeamDetailsComponent
+      },
+      {
+        path:"profilDetail/:id",component:MemberProfilComponent
       },
       {
         path:"test", component:TestComponent

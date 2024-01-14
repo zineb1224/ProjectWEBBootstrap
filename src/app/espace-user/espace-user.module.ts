@@ -20,6 +20,11 @@ import { ProjectContentComponent } from './team-details/project-content/project-
 import { MemberItemComponent } from './team-details/project-content/member-item/member-item.component';
 import { SkillItemComponent } from './my-profil/skill-item/skill-item.component';
 import { CetificatItemComponent } from './my-profil/cetificat-item/cetificat-item.component';
+import { ItemMemberComponent } from './my-teams/team-item/item-member/item-member.component';
+import { MemberProfilComponent } from './member-profil/member-profil.component';
+import { ItemCertiComponent } from './member-profil/item-certi/item-certi.component';
+import { ItemSkillComponent } from './member-profil/item-skill/item-skill.component';
+import { ModalEditComponent } from './my-projects/project-item/modal-edit/modal-edit.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +43,12 @@ import { CetificatItemComponent } from './my-profil/cetificat-item/cetificat-ite
     ProjectContentComponent,
     MemberItemComponent,
     SkillItemComponent,
-    CetificatItemComponent
+    CetificatItemComponent,
+    ItemMemberComponent,
+    MemberProfilComponent,
+    ItemCertiComponent,
+    ItemSkillComponent,
+    ModalEditComponent
   ],
   imports: [
     CommonModule,

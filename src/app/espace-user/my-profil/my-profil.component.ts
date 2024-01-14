@@ -38,6 +38,22 @@ export class MyProfilComponent implements OnInit {
     confirmPassword: new FormControl("", [Validators.required])
   });
 
+  public formSkills = new FormGroup({
+    name: new FormControl('', [Validators.required])
+  });
+
+  public formCertificats = new FormGroup({
+    title: new FormControl('', [Validators.required]),
+    name_etablishment: new FormControl('', [Validators.required])
+  });
+
+  public addSkill(){
+
+  }
+
+  public addCertificat(){
+
+  }
 
   public editImg() {
   }

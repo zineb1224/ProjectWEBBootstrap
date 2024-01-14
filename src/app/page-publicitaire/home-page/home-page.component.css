@@ -72,7 +72,7 @@ nav{
 
 #titleProject{
     color: white;
-    font-size: 38px;
+    font-size: 39px;
     font-family: 'Poppins';
     padding: 5px 0px;
 }
@@ -92,15 +92,15 @@ nav{
 
 #btnGetStarted{
     display: inline-block;
-    width: 180px;
-    height: 50px;
+    width: 185px;
+    height: 55px;
     border-radius: 10px;
     color: white;
     background: transparent;
     border: 2px solid transparent;
     border-image: linear-gradient(to right top,var(--color-secondary-shade2), var(--color-secondary-shade5)) 1; /* Dégradé de rouge à jaune pour la bordure */
     border-image-slice: 1; /* Couper le dégradé en tranches égales */
-    margin: 25px 20px;
+    margin: 25px 15px;
     font-family: 'Poppins', sans-serif;
     transition: transform 500ms ease-in-out-back, background-position 800ms ease-in-out-back, box-shadow 500ms linear;
 }
@@ -108,16 +108,42 @@ nav{
 #btnGetStarted:hover{
     border: none;
     background: linear-gradient(to right top, var(--color-secondary-shade2), var(--color-secondary-shade4), var(--color-secondary-shade5));
-    box-shadow: -2px 9px 5px 2px var(--color-secondary-shade4);
+    box-shadow: -2px 9px 5px 2px var(--color-secondary-shade3);
     transform: scale(1.15);
-    
 }
 
 .picDesc{
-    height: 600px;
-    width: 470px;
+    height: 650px;
+    width: 480px;
     margin-bottom: 60px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    position: relative;
 }
+
+@keyframes example {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 350px;
+    }
+
+    50% {
+        left: 350px;
+    }
+
+    75% {
+        left: 0px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
 
 .recommendations{
     display: flex;
@@ -160,7 +186,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:rgba(35, 35, 35, 0.382) ;
+    background-color:rgba(225, 225, 225, 0.086) ;
     width: 265px;
     border: none;
     padding: 15px 10px;
