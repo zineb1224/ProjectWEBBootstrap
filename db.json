@@ -8,7 +8,7 @@
       "type": "projet informatique",
       "progress": 50,
       "date_debut": "2024-01-10",
-      "date_fin": "2024-01-19",
+      "date_fin": "2024-01-28",
       "team_id": 1
     },
     {
@@ -432,7 +432,7 @@
     {
       "id": 4,
       "nom": "Team Robotic",
-      "icon": "teamicon.png",
+      "icon": "roboticicon.png",
       "goalTeam": "the objective of our team is supposed to improve problem solving skills",
       "nbr_member": 4,
       "leader_name": "El hanafi Lina",
@@ -458,7 +458,7 @@
       "titre": "Data cleaning",
       "description": "do the step for cleaning data to use it in our model",
       "status": "in progress",
-      "progress": 60,
+      "progress": 86,
       "date_debut": "2024-01-14",
       "date_fin": "2024-01-22",
       "respo": "El houz Zineb",
@@ -470,7 +470,7 @@
       "titre": "ML model",
       "description": "write a ML model that solve the prob",
       "status": "in progress",
-      "progress": 30,
+      "progress": 50,
       "date_debut": "2024-01-13",
       "date_fin": "2024-01-20",
       "respo": "Samali Abderrahmane",
@@ -482,8 +482,8 @@
       "titre": "DL model",
       "description": "write a DL model that solve the prob",
       "status": "in progress",
-      "progress": 40,
-      "date_debut": "2024-01-15",
+      "progress": 48,
+      "date_debut": "2024-01-08",
       "date_fin": "2024-01-18",
       "respo": "El houz Zineb",
       "respo_id": 1,
@@ -493,13 +493,137 @@
       "titre": "model test",
       "description": "do a test for the model ",
       "status": "in progress",
-      "progress": "0",
+      "progress": 38,
       "date_debut": "2024-01-15",
-      "date_fin": "2024-01-17",
+      "date_fin": "2024-01-25",
       "respo": "Berquia Mouad",
       "respo_id": 4,
       "project_id": 1,
       "id": 4
+    },
+    {
+      "titre": "model DL test",
+      "description": "do a test for the DL model ",
+      "status": "in progress",
+      "progress": 0,
+      "date_debut": "2024-01-22",
+      "date_fin": "2024-01-27",
+      "respo": "Samali Abderrahmane",
+      "respo_id": 3,
+      "project_id": 2,
+      "id": 5
+    },
+    {
+      "titre": "finetune a LLM",
+      "description": "finetune a LLM ",
+      "status": "in progress",
+      "progress": 5,
+      "date_debut": "2024-01-14",
+      "date_fin": "2024-01-20",
+      "respo": "Berquia Mouad",
+      "respo_id": 4,
+      "project_id": 2,
+      "id": 6
+    },
+    {
+      "titre": "collect dataset",
+      "description": "collect the dataset and get it ready for the model ",
+      "status": "in progress",
+      "progress": 28,
+      "date_debut": "2024-01-16",
+      "date_fin": "2024-01-17",
+      "respo": "Dahhou Zouhair",
+      "respo_id": 6,
+      "project_id": 2,
+      "id": 7
+    },
+    {
+      "titre": "data structures",
+      "description": "read about the differents data structures ",
+      "status": "in progress",
+      "progress": 48,
+      "date_debut": "2024-01-13",
+      "date_fin": "2024-01-17",
+      "respo": "El houz Zineb",
+      "respo_id": 1,
+      "project_id": 3,
+      "id": 8
+    },
+    {
+      "titre": "problem solving",
+      "description": "write a code in C++ to solve a specific prob ",
+      "status": "in progress",
+      "progress": 48,
+      "date_debut": "2024-01-13",
+      "date_fin": "2024-02-17",
+      "respo": "Berquia Mouad",
+      "respo_id": 4,
+      "project_id": 3,
+      "id": 9
+    },
+    {
+      "titre": "problem solving",
+      "description": "write a code in Java to solve a specific prob ",
+      "status": "in progress",
+      "progress": 36,
+      "date_debut": "2024-01-16",
+      "date_fin": "2024-02-27",
+      "respo": "Zarouli Ahmed Amine",
+      "respo_id": 7,
+      "project_id": 3,
+      "id": 10
+    }
+    ,
+    {
+      "titre": "Robotics",
+      "description": "read about the robotics and some documantations",
+      "status": "in progress",
+      "progress": 36,
+      "date_debut": "2024-01-14",
+      "date_fin": "2024-01-21",
+      "respo": "El houz Zineb",
+      "respo_id": 1,
+      "project_id": 4,
+      "id": 11
+    }
+    ,
+    {
+      "titre": "Sensors",
+      "description": "read about the differents sensors",
+      "status": "in progress",
+      "progress": 75,
+      "date_debut": "2024-01-14",
+      "date_fin": "2024-01-18",
+      "respo": "El hanafi Lina",
+      "respo_id": 2,
+      "project_id": 4,
+      "id": 12
+    }
+    ,
+    {
+      "titre": "project Robotics",
+      "description": "search about ideas for a robotic project",
+      "status": "in progress",
+      "progress": 78,
+      "date_debut": "2024-01-14",
+      "date_fin": "2024-01-16",
+      "respo": "Obeidat Jamal Eddine",
+      "respo_id": 5,
+      "project_id": 4,
+      "id": 13
+    }
+    ,
+    {
+      "titre": "Robotics",
+      "description": "",
+      "status": "in progress",
+      "progress": 78,
+      "date_debut": "2024-01-16",
+      "date_fin": "2024-02-27",
+      "respo": "Dahhou Zouhair",
+      "respo_id": 6,
+      "project_id": 4,
+      "id": 14
     }
   ]
 }
