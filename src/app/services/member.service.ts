@@ -20,7 +20,6 @@ export class MemberService {
   }
 
   create(member:any):Observable<Member>{
-    
      return  this.http.post<Member>(`${BASE_URL}/members`,member);
   }
  

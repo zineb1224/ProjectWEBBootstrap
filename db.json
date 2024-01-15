@@ -572,8 +572,7 @@
       "respo_id": 7,
       "project_id": 3,
       "id": 10
-    }
-    ,
+    },
     {
       "titre": "Robotics",
       "description": "read about the robotics and some documantations",
@@ -585,8 +584,7 @@
       "respo_id": 1,
       "project_id": 4,
       "id": 11
-    }
-    ,
+    },
     {
       "titre": "Sensors",
       "description": "read about the differents sensors",
@@ -598,8 +596,7 @@
       "respo_id": 2,
       "project_id": 4,
       "id": 12
-    }
-    ,
+    },
     {
       "titre": "project Robotics",
       "description": "search about ideas for a robotic project",
@@ -611,8 +608,7 @@
       "respo_id": 5,
       "project_id": 4,
       "id": 13
-    }
-    ,
+    },
     {
       "titre": "Robotics",
       "description": "",

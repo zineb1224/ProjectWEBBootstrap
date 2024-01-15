@@ -4,7 +4,7 @@ export interface Member{
     email:string;
     password?:string;
     telephone:string;
-    date_naissance:Date;
+    date_naissance:string;
     sexe?:string;
     cin:string;
     description:string;

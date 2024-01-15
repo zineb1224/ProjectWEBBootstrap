@@ -21,7 +21,7 @@
         <div class="mb-3 row">
           <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
           <div class="col-sm-10">
-            <input type="email" formControlName="email" class="form-control" id="staticEmail" placeholder="name@example.com">
+            <input type="email" formControlName="email" class="form-control" id="staticEmail" placeholder="name@example.com" required>
           </div>
         </div>
         <div class="mb-3 row">
@@ -43,19 +43,30 @@
           </div>
         </div>
         <div class="mb-3 row">
+          <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+          <div class="col-sm-10">
+            <select class="form-select" id="gender" placeholder="gender" formControlName="gender"
+            aria-label="Default select example">
+            <option value="1">masculin</option>
+            <option value="2">feminin</option>
+          </select>
+          </div>
+        </div>
+        <div class="mb-3 row">
           <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
           <div class="col-sm-10">
-            <input type="password" formControlName="password" class="form-control" id="inputPassword" placeholder="password">
+            <input type="password" formControlName="password" class="form-control" id="inputPassword" placeholder="password" required>
           </div>
         </div>
         <div class="mb-3 row">
           <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
           <div class="col-sm-10">
-            <input type="password" formControlName="confirmpassword"  class="form-control" id="inputPassword" placeholder="confirm password">
+            <input type="password" formControlName="confirmpassword"  class="form-control" id="inputPassword" placeholder="confirm password" required>
           </div>
         </div>
+
         <div class="btn_login">
-          <button type="submit" id="btnLogin" routerLink="/espaceUser">Register</button>
+          <button type="submit" id="btnLogin">Register</button>
         </div>
         <div class="linkSignUp">
           <p class="txtSign">
