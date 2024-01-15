@@ -13,7 +13,6 @@ import { ProjectItemComponent } from './my-projects/project-item/project-item.co
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { TaskItemComponent } from './my-tasks/task-item/task-item.component';
 import { MyProfilComponent } from './my-profil/my-profil.component';
-import { TestComponent } from './test/test.component';
 import { TeamItemComponent } from './my-teams/team-item/team-item.component';
 import { TeamDetailsComponent } from './team-details/team-details.component';
 import { ProjectContentComponent } from './team-details/project-content/project-content.component';
@@ -37,7 +36,6 @@ import { ModalEditComponent } from './my-projects/project-item/modal-edit/modal-
     ProjectDetailsComponent,
     TaskItemComponent,
     MyProfilComponent,
-    TestComponent,
     TeamItemComponent,
     TeamDetailsComponent,
     ProjectContentComponent,

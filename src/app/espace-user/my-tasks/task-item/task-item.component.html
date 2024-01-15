@@ -58,9 +58,16 @@
           <div class="content--time">
             <p class="date">{{task.status}}</p>
           </div>
-          <div class="content--progress">
-            <progress class="progressBar" value="75" max="100"> </progress>
-            <p class="progress__pourcentage">{{task.progress}}%</p>
+          <div class="content--progress progressBar">
+            <div class="progress" role="progressbar" aria-label="Info example" 
+            [attr.aria-valuenow]="project.progress" 
+            aria-valuemin="0" 
+            aria-valuemax="100">
+         <div class="progress-bar bg-info text-dark" 
+              [style.width.%]="task.progress">
+              {{task.progress}}%
+         </div>
+       </div>
           </div>
           <div class="content--others">
             <a class="other-link delete" data-bs-toggle="modal" data-bs-target="#deletetaskmodal">
@@ -134,7 +141,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Confirm</button>
+        <button type="button" class="btn btn-primary" (click)="delete(task.id)">Confirm</button>
       </div>
     </div>
   </div>
@@ -155,13 +162,13 @@
             <div class="input-element">
               <div class="input input-title">
                 <label for="">Task title :</label>
-                <input type="text" formControlName="title" placeholder="Task Titre">
+                <input type="text" formControlName="title" [placeholder]="task.titre">
               </div>
             </div>
             <div class="input-element">
               <div class="input input-title">
                 <label for="">Task Description :</label>
-                <input type="text" formControlName="description" placeholder="Task Description">
+                <input type="text" formControlName="description" [placeholder]="task.description">
               </div>
             </div>
             <div class="input-element">

@@ -4,8 +4,8 @@ export interface Task {
     description:string;
     status:string;
     progress:string;
-    date_debut:Date;
-    date_fin:Date;
+    date_debut:string;
+    date_fin:string;
     respo?:string;
     respo_id?:number;
     project_id?:number;

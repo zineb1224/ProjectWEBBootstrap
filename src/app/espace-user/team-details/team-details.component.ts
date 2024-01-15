@@ -21,7 +21,10 @@ export class TeamDetailsComponent implements OnInit {
     });
     this.teamService.getById(this.id).subscribe(
       {
-        next: (data) => {this.team = data;console.log(data)},
+        next: (data) => {
+          this.team = data;
+          console.log(data)
+        },
         error: (error) => {console.log(error);}
       }
     )
@@ -32,15 +35,12 @@ export class TeamDetailsComponent implements OnInit {
         this.items = this.items.filter((item:any) => item.id == this.id);
       }
     )
-    
+    localStorage.setItem("id_team", String(this.id));
   }
 
   public back(){
     this.router.navigateByUrl("/myTeams")
   }
 
-  repeat(count: number): number[] {
-    return Array(count).fill(0);
-  }
 
 }

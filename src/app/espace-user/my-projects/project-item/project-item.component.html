@@ -37,10 +37,17 @@
 
     </div>
     <div class="card-body progressBar">
-      <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar bg-info text-dark" style="width: 50%">{{project.progress}}</div>
+      <div class="progress" role="progressbar" aria-label="Info example" 
+           [attr.aria-valuenow]="project.progress" 
+           aria-valuemin="0" 
+           aria-valuemax="100">
+        <div class="progress-bar bg-info text-dark" 
+             [style.width.%]="project.progress">
+          {{ project.progress }}%
+        </div>
       </div>
     </div>
+    
   </div>
 
 

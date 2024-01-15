@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ProjectService } from 'src/app/services/project.service';
+import { TaskService } from 'src/app/services/task.service';
 
 @Component({
   selector: 'app-task-item',
@@ -12,7 +13,7 @@ export class TaskItemComponent implements OnInit {
   @Input() task:any;
   public project:any;
   public isShown:boolean = false;
-  constructor(private projectsService: ProjectService) { }
+  constructor(private projectsService: ProjectService, private taskservice:TaskService) { }
 
   public showDetails(){
     this.isShown = ! this.isShown;
@@ -34,6 +35,9 @@ export class TaskItemComponent implements OnInit {
   });
 
   editTask(){}
-  
-
+  delete(id:number){
+    this.taskservice.delete(id).subscribe(
+      ()=>{}
+    )
+  }
 }
